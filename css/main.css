@@ -20,13 +20,14 @@
     padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 15px;
+    background-color: beige;
 }
   .bg-primary {
     background: #41228e !important;
   }
 
   .container {
-    width: 40%;
+    width: 15%;
     margin-bottom: 15ex;
     padding-right: 15px;
     padding-left: 15px;
@@ -75,11 +76,14 @@
 
 .container3 {
     width: 100%;
+    height: 20%;
+    margin-top: 10ex;
     padding-right: 15px;
     color: #fff;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 2ex;
     background-color: #22767f;
 }
 .footer-widget {
@@ -104,16 +108,6 @@
     padding-left: 15px;
 }
 
-
-        aside {
-            flex-basis: 100px;
-            background-color: #A3C8E1;
-            height: auto;
-        width: auto; 
-        }
-       
-        
-
         body {
             line-height: 1.2;
             font-family: "Roboto", sans-serif;
@@ -125,9 +119,6 @@
           }
       
       
-
-        
-
 
 .float-right {
     float: right!important;
@@ -182,7 +173,7 @@ h1.headfont {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
-    padding-top: 30px;
+    /* padding-top: 220ex; */
     line-height: 1.2;
 }
 }
@@ -215,4 +206,75 @@ div.appicons {
 
 .color1s{
     color:#0a98c0;
+}
+
+/* -------------------------------------------------------- */
+
+.content {
+    border-top: 1px solid #f5f1ef;
+}
+
+#containercarriers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.callout-col__text {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 44px;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+    z-index: 999;
+    font-family: "Bogle-Bold","Bogle-Regular","Helvetica","Arial",sans-serif;
+}   
+
+
+.callout-col__img {
+    transition: all .25s ease;
+    object-fit: cover;
+    width: 100%;
+}
+
+.callout-col {
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ----------------------------- */
+
+element.style {
+    width: 1210px;
+}
+.entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+}
+article .wp-caption img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    text-align: left;
+    margin-top: 0.75rem;
+    display: block;
+    margin: 1rem 0.75rem 2rem;
 }
