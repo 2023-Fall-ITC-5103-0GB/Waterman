@@ -238,3 +238,34 @@ div.appicons {
 }
 
 
+
+/*sneha*/
+#container1s{
+    margin: 40px;
+    padding-top: 50px;
+}
+.container2s{
+    padding-top: 20px;float: left;
+    width:350;height:400;
+
+}
+.container3s{
+    width: 500px;height: 200px;
+    border: 1px solid black;
+    position: relative;left: 300px;
+}
+.container4s{
+    width:400px;height: 60px;
+    background-color: none;
+    border: 1px solid #d8d8d8;
+}
+.container5s{
+    border: 1px solid black;
+    height: 400px;
+}
+
+
+.color1s{
+    color:#0a98c0;
+    padding: 20px;
+}
