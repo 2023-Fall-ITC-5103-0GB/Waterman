@@ -1,0 +1,211 @@
+.panel-heading {
+    border: 1px solid #ffcc00;
+    border-bottom: none;
+    padding: 5px;
+    background-color: #ffcc00;
+    color: #0c0c0c;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 0px 6px -1px #AE9F9A
+  }
+
+
+.panel-body {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 0em;
+    box-shadow: 0px 0px 6px -1px #AE9F9A;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+  .bg-primary {
+    background: #41228e !important;
+  }
+
+  .container {
+    width: 40%;
+    margin-bottom: 15ex;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-right: auto; */
+    margin-top: 1ex;
+    /* margin-left: auto; */
+}
+
+
+.container2 {
+    width: 100%;
+    margin-bottom: 15ex;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-right: auto; */
+    margin-top: 1ex;
+    /* margin-left: auto; */
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.w-100 {
+    width: 100%!important;
+}
+
+.layer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+  /* main { display: flex; } */
+
+
+  .secondery-bg {
+    background-color: #22767f;
+}
+
+.container3 {
+    width: 100%;
+    padding-right: 15px;
+    color: #fff;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #22767f;
+}
+.footer-widget {
+    padding-right: 0;
+    text-align: left !important;
+}
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-widget .widget-title {
+    margin-bottom: 30px;
+}
+.col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+        aside {
+            flex-basis: 100px;
+            background-color: #A3C8E1;
+            height: auto;
+        width: auto; 
+        }
+       
+        
+
+        body {
+            line-height: 1.2;
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 15px;
+            color: #4c4c4c;
+            background-color: #fff;
+  overflow-x: hidden;
+          }
+      
+      
+
+        
+
+
+.float-right {
+    float: right!important;
+}
+.main-nav a {
+    display: block;
+    position: relative;
+    color: #413e66;
+    padding: 7px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+   
+element.style {
+    font-family: -apple-system, BlinkMacSystemFont,'Product Sans';
+    padding-top: 20%;
+}
+
+.main-nav > ul > li {
+    position: relative;
+    white-space: nowrap;
+    list-style-type: none;
+    float: left;
+}
+a {
+    color: #1bb1dc;
+    transition: 0.5s;
+  }
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: #1bb1dc;
+  text-decoration: none;
+}
+
+
+@media (max-width: 760px)
+{
+h1.headfont {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    line-height: 1.2;
+}
+}
+
+@media (max-width: 888px)
+{
+div.headfont1 {
+    font-size: 16px;
+    line-height: 1.8;
+}
+}
+
+@media screen and (max-width: 480px) and (min-width: 360px)
+{
+div.appicons {
+    margin: 0 auto;
+    display: inline-flex;
+    padding-top: 10px;
+}
+}
+
+*, ::after, ::before {
+	box-sizing: border-box
+}
+
+
