@@ -291,12 +291,37 @@ div.appicons {
     padding: 20px;
 }
 
+/* Rafiat Style for section #c1 */
+#c1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#c1 p {
+    font-size: 70px;
+    color: #22767f;
+    background-color: skyblue;
+    padding: 0 200px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+#c1 img {
+    width: 800px;
+    height: 350px;
+    float: right;
+    margin: 100px;
+    border-radius: 20px;
+}
+
 .c1{
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #22767f;
     margin: 0 900px 0 30px;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .btn {
@@ -308,6 +333,11 @@ div.appicons {
     font-size: x-large;
     color: #22767f;
     background-color: skyblue;
+}
+
+.btn:hover {
+    color: #22767f;
+    cursor: pointer;
 }
 
 /* Style for section #c2 */
