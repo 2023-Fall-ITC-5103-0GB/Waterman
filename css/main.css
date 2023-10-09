@@ -105,15 +105,36 @@
 .container3 {
     width: 100%;
     padding-right: 15px;
-    color: #fff;
+    color: #1bb1dc;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin:30px auto;
     background-color: #22767f;
 }
+
+#name {
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+.lang {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px 0;
+    word-spacing: 2cm;
+}
+.fund {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+    word-spacing: 3cm;
+}
 .footer-widget {
-    padding-right: 0;
+    padding-right: 50px;
+    margin: 30px 0;
     text-align: left !important;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 
@@ -207,7 +228,7 @@ a:focus {
 
 @media (max-width: 760px)
 {
-h1.headfont {
+h1.headfont,  {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -269,3 +290,4 @@ div.appicons {
     color:#0a98c0;
     padding: 20px;
 }
+    
