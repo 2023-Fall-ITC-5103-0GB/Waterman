@@ -107,7 +107,10 @@
     padding-right: 15px;
     color: #1bb1dc;
     padding-left: 15px;
-    margin:30px auto;
+    height: 25ex;
+    /* margin-top: 10%; */
+    /* margin-bottom: 90%; */
+    /* margin-bottom: 2ex; */
     background-color: #22767f;
 }
 
@@ -126,7 +129,7 @@
 .fund {
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 30px;
+    padding-bottom: 1ex;
     word-spacing: 3cm;
 }
 .footer-widget {
@@ -270,11 +273,11 @@ div.appicons {
     width:350;height:400;
 
 }
-.container3s{
-    width: 500px;height: 200px;
+/* .container3s{
+    width: 50px;height: 1opx;
     border: 1px solid black;
     position: relative;left: 300px;
-}
+} */
 .container4s{
     width:400px;height: 60px;
     background-color: none;
