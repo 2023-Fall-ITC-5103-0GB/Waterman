@@ -1,0 +1,397 @@
+ /* Header element */
+ header {
+    background-color: skyblue;
+    color: rgb(30, 55, 75);
+    font-size: larger;
+    font-style: oblique; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px 0 0 0;
+    padding-top: 30px;
+ }
+ 
+ .float-right {
+    float: right!important;
+}
+.main-nav a {
+    display: block;
+    position: relative;
+    color: #413e66;
+    padding: 7px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+  }
+
+  /* Sidhart's work */
+ .panel-heading {
+    border: 1px solid #ffcc00;
+    border-bottom: none;
+    padding: 5px;
+    background-color: #ffcc00;
+    color: #0c0c0c;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 0px 6px -1px #AE9F9A
+  }
+
+
+.panel-body {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 0em;
+    box-shadow: 0px 0px 6px -1px #AE9F9A;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background-color: beige;
+}
+  .bg-primary {
+    background: #41228e !important;
+  }
+
+  .container {
+    width: 15%;
+    margin-bottom: 15ex;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-right: auto; */
+    margin-top: 1ex;
+    /* margin-left: auto; */
+}
+
+
+.container2 {
+    width: 100%;
+    margin-bottom: 15ex;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-right: auto; */
+    margin-top: 1ex;
+    /* margin-left: auto; */
+}
+
+.row {
+    display: -ms-flexbox;
+     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.w-100 {
+    width: 100%!important;
+}
+
+.layer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+  /* main { display: flex; } */
+
+
+  .secondery-bg {
+    background-color: #22767f;
+}
+
+.container3 {
+    width: 100%;
+    padding-right: 15px;
+    color: #1bb1dc;
+    padding-left: 15px;
+    height: 25ex;
+    /* margin-top: 10%; */
+    /* margin-bottom: 90%; */
+    /* margin-bottom: 2ex; */
+    background-color: #22767f;
+}
+
+#name {
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+.lang {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px 0;
+    word-spacing: 2cm;
+}
+.fund {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 1ex;
+    word-spacing: 3cm;
+}
+.footer-widget {
+    padding-right: 50px;
+    margin: 30px 0;
+    text-align: left !important;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-widget .widget-title {
+    margin-bottom: 30px;
+}
+.col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+        aside {
+            flex-basis: 100px;
+            background-color: #A3C8E1;
+            height: auto;
+        width: auto; 
+        }
+       
+        
+
+        body {
+            line-height: 1.2;
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 15px;
+            color: #4c4c4c;
+            background-color: #fff;
+  overflow-x: hidden;
+          }
+      
+      
+
+        
+
+
+.float-right {
+    float: right!important;
+}
+.main-nav a {
+    display: block;
+    position: relative;
+    color: #413e66;
+    padding: 7px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+   
+element.style {
+    font-family: -apple-system, BlinkMacSystemFont,'Product Sans';
+    padding-top: 20%;
+}
+
+.main-nav > ul > li {
+    position: relative;
+    white-space: nowrap;
+    list-style-type: none;
+    float: left;
+}
+a {
+    color: #1bb1dc;
+    transition: 0.5s;
+  }
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: #1bb1dc;
+  text-decoration: none;
+}
+
+
+@media (max-width: 760px)
+{
+h1.headfont,  {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    line-height: 1.2;
+}
+}
+
+@media (max-width: 888px)
+{
+div.headfont1 {
+    font-size: 16px;
+    line-height: 1.8;
+}
+}
+
+@media screen and (max-width: 480px) and (min-width: 360px)
+{
+div.appicons {
+    margin: 0 auto;
+    display: inline-flex;
+    padding-top: 10px;
+}
+}
+
+*, ::after, ::before {
+	box-sizing: border-box
+}
+
+
+
+/*sneha*/
+#container1s{
+    margin: 40px;
+    padding-top: 50px;
+}
+.container2s{
+    padding-top: 20px;float: left;
+    width:350;height:400;
+
+}
+/* .container3s{
+    width: 50px;height: 1opx;
+    border: 1px solid black;
+    position: relative;left: 300px;
+} */
+.container4s{
+    width:400px;height: 60px;
+    background-color: none;
+    border: 1px solid #d8d8d8;
+}
+.container5s{
+    border: 1px solid #1bb1dc;;
+    height: 400px;
+}
+
+
+.color1s{
+    color:#0a98c0;
+    padding: 20px;
+}
+
+/* Rafiat Style for section #c1 */
+#c1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#c1 p {
+    font-size: 70px;
+    color: #22767f;
+    background-color: skyblue;
+    padding: 0 200px;
+    /* margin-right: 100px; */
+    border-radius: 10px;
+}
+
+#c1 img {
+    width: 800px;
+    height: 350px;
+    float: right;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+.c1{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #22767f;
+    margin: 0 900px 0 30px;
+    /* padding: 50px; */
+}
+
+.btn {
+    padding: 10px;
+    border: 5px solid #22767f;
+    border-radius: 5px;
+    width: 200px; height: 100px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #22767f;
+    background-color: skyblue;
+}
+
+.btn:hover {
+    color: #22767f;
+    cursor: pointer;
+}
+
+/* Style for section #c2 */
+#c2 p {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin: 10px;
+    border: #A3C8E1 5px solid;
+    color: #22767f;
+    /* padding: 20px; */
+}
+
+#c2 h3 {
+    font-size: 40px;
+    color: #22767f;
+    text-align: center;
+    word-spacing: 1cm;
+    background-color: #1bb1dc;
+    padding: 30px;
+    border: 6px dashed #22767f;
+}
+
+/* Style for the subscribe form within #c2 */
+.c2 {
+    padding: 10px;
+}
+
+.c2 form {
+    margin-top: 20px;
+
+}
+
+.c2 input[type="email"] {
+    width: 40%;
+    padding: 10px;
+    border: 2px #22767f thin;
+    border-radius: 5px;
+}
+
+.c2 button.button_1 {
+    background-color: skyblue;
+    color: #22767f;
+    border: #22767f 2px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+::placeholder {
+    color: #22767f;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
