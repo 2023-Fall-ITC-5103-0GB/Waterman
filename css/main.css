@@ -298,25 +298,6 @@ div.appicons {
     padding: 20px;
 }
 
-/* Rafiat Style for section #c1 */
-/* .current .drop-down menu {
-    list-style-type: none;
-} */
-
-/* .dd1, .dd2 {
-    list-style-type: none;
-}
-
-li:hover .drop-down {
-    display: block;
-}
-.drop-down menu {
-    display: none;
-    position: absolute;
-    background-color: #1bb1dc;
-    /* min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-/* } */ */
 
 
 
@@ -436,3 +417,4 @@ li:hover .drop-down {
 h2 {
     color: #22767f;
 }
+
