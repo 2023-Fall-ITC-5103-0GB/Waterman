@@ -303,17 +303,24 @@ div.appicons {
     list-style-type: none;
 } */
 
-.dd1, .dd2 {
+/* .dd1, .dd2 {
     list-style-type: none;
 }
 
+li:hover .drop-down {
+    display: block;
+}
 .drop-down menu {
     display: none;
     position: absolute;
     background-color: #1bb1dc;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    /* min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+/* } */ */
+
+
+
+
 #c1 {
     display: flex;
     align-items: center;
