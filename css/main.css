@@ -208,6 +208,10 @@ element.style {
     list-style-type: none;
     float: left;
 }
+/* Rafiat made the current changes */
+.current a {
+    color: red;  
+}
 a {
     color: #1bb1dc;
     transition: 0.5s;
@@ -295,6 +299,21 @@ div.appicons {
 }
 
 /* Rafiat Style for section #c1 */
+/* .current .drop-down menu {
+    list-style-type: none;
+} */
+
+.dd1, .dd2 {
+    list-style-type: none;
+}
+
+.drop-down menu {
+    display: none;
+    position: absolute;
+    background-color: #1bb1dc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 #c1 {
     display: flex;
     align-items: center;
@@ -311,13 +330,18 @@ div.appicons {
     border-radius: 10px;
 }
 
-#c1 img {
-    width: 800px;
-    height: 350px;
-    float: right;
-    margin: 100px;
-    border-radius: 20px;
-}
+/* @media screen (min-width: 300px) and (max- width:800px)
+{ */
+    #c1 img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 350px;
+        float: right;
+        margin: 100px;
+        border-radius: 20px;
+    }
+/* } */
 
 .c1{
     font-size: larger;
@@ -394,4 +418,14 @@ div.appicons {
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+.section1 img{
+    border-radius: 2cm;
+    display: flex;
+    -ms-flex-align: right;
+}
+
+h2 {
+    color: #22767f;
 }
