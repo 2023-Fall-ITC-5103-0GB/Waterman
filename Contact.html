@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealers</title>
+    <!-- <link rel="stylesheet" href="all.css" media="all" /> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="./images/favconimg.png" />
     <script src="https://kit.fontawesome.com/63cf91fe22.js"
@@ -16,18 +17,22 @@
 
         
         <div style="background-color:#1bb1dc;">
-            <img class="sticky-logo d-none" src="./images/water.jpg" 
-            data-rjs="2" alt="Home water delivery" height="100px">
+            <a href="home.html"><img class="sticky-logo d-none" src="./images/water.jpg" 
+            data-rjs="2" alt="Home water delivery" height="100px"></a><!--Linked the logo to home page-->
           
-        </a>
-        
-    </div>  
+        </div>  
     
         <nav class="main-nav float-right d-none d-lg-block">
             <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                <li class="current"><a href="home.html" style="padding-top: 20%;">HOME</a></li>
+                <li class=""><a href="home.html" style="padding-top: 20%;">HOME</a></li>
                 <li class=""><a href="aboutus.html" style="padding-top: 14%;">ABOUT US</a></li>
-                <li class=""><a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a></li>
+                <li class="current" type="button" data-toggle="dropdown">
+                    <a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a>
+                        <ul class="drop-down menu">
+                             <li class="dd1"><a href="Dealers.html">Dealers</a></li>
+                             <li class="dd2"><a href="Feedback.html">Feedback</a></li>
+                        </ul>
+                </li>
                 <li class=""><a href="carriers.html" style="padding-top: 14%;">Carriers</a></li>
                 <li class=""><a href="sources.html" style="padding-top: 9%;">Staying Healthy</a></li>
                 <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                
@@ -39,6 +44,7 @@
         <p>Need Assistance?</p>
         <img src="./images/chat.webp" 
         alt="customer service agent"
+        media="all"
          >
     </section>
     <div class="c1">
