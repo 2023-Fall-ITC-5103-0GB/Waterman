@@ -408,13 +408,10 @@ div.appicons {
 
 }
 
-.section1 img{
-    border-radius: 2cm;
-    display: flex;
-    -ms-flex-align: right;
+@media screen {
+    .rafiat {
+    border: #0a98c0 5px solid;
+}
 }
 
-h2 {
-    color: #22767f;
-}
 
