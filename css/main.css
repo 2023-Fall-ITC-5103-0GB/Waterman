@@ -208,6 +208,10 @@ element.style {
     list-style-type: none;
     float: left;
 }
+/* Rafiat made the current changes */
+.current a {
+    color: red;  
+}
 a {
     color: #1bb1dc;
     transition: 0.5s;
@@ -352,7 +356,10 @@ div.appicons {
 }
 /*/////////SNEHA////////////*/
 
-/* Rafiat Style for section #c1 */
+
+
+
+
 #c1 {
     display: flex;
     align-items: center;
@@ -369,13 +376,18 @@ div.appicons {
     border-radius: 10px;
 }
 
-#c1 img {
-    width: 800px;
-    height: 350px;
-    float: right;
-    margin: 100px;
-    border-radius: 20px;
-}
+/* @media screen (min-width: 300px) and (max- width:800px)
+{ */
+    #c1 img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 350px;
+        float: right;
+        margin: 100px;
+        border-radius: 20px;
+    }
+/* } */
 
 .c1{
     font-size: larger;
@@ -453,3 +465,11 @@ div.appicons {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+@media screen {
+    .rafiat {
+    border: #0a98c0 5px solid;
+}
+}
+
+
