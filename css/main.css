@@ -376,18 +376,25 @@ div.appicons {
     border-radius: 10px;
 }
 
-/* @media screen (min-width: 300px) and (max- width:800px)
-{ */
     #c1 img {
         display: flex;
         flex-wrap: wrap;
-        width: 800px;
+        width: 400px;
         height: 350px;
         float: right;
-        margin: 100px;
+        margin: 90px;
         border-radius: 20px;
     }
-/* } */
+
+    @media screen { 
+        #c1 img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            float: inline-start;
+        } 
+ } 
 
 .c1{
     font-size: larger;
@@ -470,6 +477,5 @@ div.appicons {
     .rafiat {
     border: #0a98c0 5px solid;
 }
+
 }
-
-
