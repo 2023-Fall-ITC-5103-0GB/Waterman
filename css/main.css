@@ -15,7 +15,7 @@
 .main-nav a {
     display: block;
     position: relative;
-    color: #413e66;
+    color: #acaac1;
     padding: 7px 15px;
     transition: 0.3s;
     font-size: 14px;
@@ -25,7 +25,18 @@
     
   }
 
+  .main-nav{
+    background-color: #0a98c0;
+  }
+
   /* Sidhart's work */
+  .home {
+    background-image: url(/Waterman/images/h3-banner2.png);
+    background-size: 50%;
+    background-repeat: 1;
+  }
+
+  
  .panel-heading {
     border: 1px solid #ffcc00;
     border-bottom: none;
@@ -105,13 +116,13 @@
 .container3 {
     width: 100%;
     padding-right: 15px;
-    color: #1bb1dc;
+    color: white;
     padding-left: 15px;
     height: 25ex;
-    /* margin-top: 10%; */
+    margin: auto;
     /* margin-bottom: 90%; */
     /* margin-bottom: 2ex; */
-    background-color: #22767f;
+    background-color: #1bb1dc;
 }
 
 #name {
@@ -188,7 +199,7 @@
 .main-nav a {
     display: block;
     position: relative;
-    color: #413e66;
+    color: white;
     padding: 7px 15px;
     transition: 0.3s;
     font-size: 14px;
@@ -210,7 +221,7 @@ element.style {
 }
 /* Rafiat made the current changes */
 .current a {
-    color: red;  
+    color: blue;  
 }
 a {
     color: #1bb1dc;
@@ -374,13 +385,14 @@ div.appicons {
     padding: 0 200px;
     /* margin-right: 100px; */
     border-radius: 10px;
+    margin-right: 50px;
 }
 
-    #c1 img {
+    /* #c1 img {
         display: flex;
         flex-wrap: wrap;
         width: 400px;
-        height: 350px;
+        height: 200px;
         float: right;
         margin: 90px;
         border-radius: 20px;
@@ -394,7 +406,7 @@ div.appicons {
             height: auto;
             float: inline-start;
         } 
- } 
+ }  */
 
 .c1{
     font-size: larger;

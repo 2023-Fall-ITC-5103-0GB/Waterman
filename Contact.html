@@ -12,7 +12,26 @@
 
 
      <style>
-        
+    #c1 img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+        /* height: 200px; */
+        float: inline-start;
+        margin-top: 90px;
+        padding: auto;
+        border-radius: 20px;
+    }
+
+    @media screen { 
+        #c1 img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            float: inline-start;
+        } 
+    } 
     nav{
         display: flex;
         flex-direction: column;
@@ -60,7 +79,7 @@ li:hover .drop-down {
     
         <nav class="main-nav float-right d-none d-lg-block">
             <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                <li class="current"><a href="home.html" style="padding-top: 20%;">HOME</a>
+                <li class=""><a href="home.html" style="padding-top: 20%;">HOME</a>
                     <ul class="drop-down menu">
                         <li ><a href="">Profile</a></li> <!--Input your page link in href and replace name -->
                         <li ><a href="sign-up.html">Sign-up</a></li> <!--Input your page link in href and replace name-->
@@ -72,7 +91,7 @@ li:hover .drop-down {
                         <li><a href="">Tracking order</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a>
+                <li class="current"><a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a>
                     <ul class="drop-down menu">
                         <li ><a href="">Email</a></li>
                         <li ><a href="">Location</a></li>
