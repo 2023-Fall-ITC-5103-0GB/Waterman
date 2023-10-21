@@ -208,10 +208,6 @@ element.style {
     list-style-type: none;
     float: left;
 }
-/* Rafiat made the current changes */
-.current a {
-    color: red;  
-}
 a {
     color: #1bb1dc;
     transition: 0.5s;
@@ -358,8 +354,7 @@ div.appicons {
 
 
 
-
-
+/* Rafiat Style for section #c1 */
 #c1 {
     display: flex;
     align-items: center;
