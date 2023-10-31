@@ -1,6 +1,6 @@
  /* Header element */
  header {
-    background-color: skyblue;
+    background-color:skyblue;
     color: rgb(30, 55, 75);
     font-size: larger;
     font-style: oblique; 
@@ -15,7 +15,7 @@
 .main-nav a {
     display: block;
     position: relative;
-    color: #413e66;
+    color: #acaac1;
     padding: 7px 15px;
     transition: 0.3s;
     font-size: 14px;
@@ -25,7 +25,18 @@
     
   }
 
+  .main-nav{
+    background-color: #0a98c0;
+  }
+
   /* Sidhart's work */
+  .home {
+    background-image: url(/Waterman/images/h3-banner2.png);
+    background-size: 50%;
+    background-repeat: 1;
+  }
+
+  
  .panel-heading {
     border: 1px solid #ffcc00;
     border-bottom: none;
@@ -105,13 +116,13 @@
 .container3 {
     width: 100%;
     padding-right: 15px;
-    color: #1bb1dc;
+    color: white;
     padding-left: 15px;
     height: 25ex;
-    /* margin-top: 10%; */
+    margin: auto;
     /* margin-bottom: 90%; */
     /* margin-bottom: 2ex; */
-    background-color: #22767f;
+    background-color: #1bb1dc;
 }
 
 #name {
@@ -188,7 +199,7 @@
 .main-nav a {
     display: block;
     position: relative;
-    color: #413e66;
+    color: white;
     padding: 7px 15px;
     transition: 0.3s;
     font-size: 14px;
@@ -210,7 +221,7 @@ element.style {
 }
 /* Rafiat made the current changes */
 .current a {
-    color: red;  
+    color: blue;  
 }
 a {
     color: #1bb1dc;
@@ -235,7 +246,7 @@ a:focus {
 
 @media (max-width: 760px)
 {
-h1.headfont,  {
+h1.headfont  {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -267,7 +278,7 @@ div.appicons {
 
 
 
-/*sneha*/
+/*////////SNEHA///////////*/
 #container1s{
     margin: 40px;
     padding-top: 50px;
@@ -287,21 +298,78 @@ div.appicons {
     background-color: none;
     border: 1px solid #d8d8d8;
 }
-.container5s{
-
-    height: 400px;
-}
+/*.container5s{
+   border: 5px solid skyblue;
+   background-image: url('./images/bgaboutus.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    height: 500px;
+}*/
 
 
 .color1s{
     color:#0a98c0;
     padding: 20px;
 }
+.sidebar1s {
+    grid-area: sidebar;
+    height: 1050px;
+  }
+.content1s {
+    grid-area: content;
+    height: 700px;
+  }
+
+  .header1s {
+    grid-area:header;
+    height: 300px;
+  }
+
+  .footer1s {
+    grid-area: footer;
+    height: 300px;
+  }
+
+        
+  .wrapper1s {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 350px 400px 400px;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+  }
+ 
+
+.box {
+  background-color:#f0eee4 ;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 110%;
+  border: 1px solid rgb(255, 245, 238);
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.header1s-1{
+    width:350px;height:280px;
+    border: 1px solid black ;
+    float:left;margin-left: 30px;
+}
+.headertext{
+    position: relative;top:400px;left:300px;color: black;
+}
+/*/////////SNEHA////////////*/
 
 
 
-
-
+/* Rafiat Style for section #c1 */
 #c1 {
     display: flex;
     align-items: center;
@@ -316,20 +384,28 @@ div.appicons {
     padding: 0 200px;
     /* margin-right: 100px; */
     border-radius: 10px;
+    margin-right: 50px;
 }
 
-/* @media screen (min-width: 300px) and (max- width:800px)
-{ */
-    #c1 img {
+    /* #c1 img {
         display: flex;
         flex-wrap: wrap;
-        width: 800px;
-        height: 350px;
+        width: 400px;
+        height: 200px;
         float: right;
-        margin: 100px;
+        margin: 90px;
         border-radius: 20px;
     }
-/* } */
+
+    @media screen { 
+        #c1 img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            float: inline-start;
+        } 
+ }  */
 
 .c1{
     font-size: larger;
@@ -412,6 +488,5 @@ div.appicons {
     .rafiat {
     border: #0a98c0 5px solid;
 }
+
 }
-
-
