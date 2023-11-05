@@ -7,119 +7,34 @@
         <link rel="shortcut icon" href="./images/water.jpg" />
         <link rel ="StyleSheet" href="./css/main.css"/>
     
-    <style>
-      .container3 {
-    width: 100%;
-    padding-right: 15px;
-    color: #1bb1dc;
-    padding-left: 15px;
-    height: 25ex;
-    /* margin-top: 10%; */
-    /* margin-bottom: 90%; */
-    /* margin-bottom: 2ex; */
-    background-color: #22767f;
-}
-
-#name {
-    padding-top: 30px;
-    text-align: center;
-    font-size: large;
-}
-
-.lang {
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 30px 0;
-    word-spacing: 2cm;
-}
-.fund {
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 1ex;
-    word-spacing: 3cm;
-}
-
-.section1 img {
-    border-radius: 2cm;
-    float:inline-start;
-    margin-right: 100px;
-  
-}
-
-@media screen {
-  .section1 img {
-    width: 100%;
-    float:inline-start;
-    
-}
-}
-
-h2 {
-    color: #22767f;
-    font-size: 50px;
-
-}
-
-.section1 {
-  margin: 10px 50px 0 100px;
-  float: right;
-}
-.section1 p {
-  font-size: larger;
-  font-weight: lighter;
-  color: #22767f;
-  padding: 0 100px;
-  margin: 0 20px 20px;
-}
-
-main{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.deals {
-  padding-top: 30px;
-}
-table {
-  border: 5px solid #1bb1dc;
-  padding: 20px;
-  border-collapse: collapse;
-  color: #22767f;
-
-}
-
-th, td {
-        border: 2px solid #1bb1dc;
-        padding: 0.2em 0.7em;
-        margin: 20px;
-        text-align: center;
-}
-
-.enquires {
-  color: #22767f;
-}
-
-    </style>
 
 </head>
-<body class="rafiat">
+<body class="general">
 
   
     <main>
-        <div style="background-color:#1bb1dc;">
-            <a href="home.html"><img class="sticky-logo d-none" src="./images/water.jpg" 
-            data-rjs="2" alt="Home water delivery" height="100px"></a><!--Linked the logo to home page-->
+        <div class="header">
+            <a href="home.html"><img class="sticky-logo d-none" src="./images/Wat.jpg" 
+            data-rjs="2" alt="Home water delivery" height="90px"></a><!--Linked the logo to home page-->
         </div>
         
         <nav>
             <ul>
-                <li class="" style="list-style-type: none;"><a href="carriers.html" 
-                  style="text-decoration: none; color: #22767f; padding: 40px;">Go back</a></li>
+                <li class="back"><a href="carriers.html" >&lt;&lt;Go back</a></li>
             </ul>
         </nav>
 
         <section class="section1">
+          <div class="img1">
             <img src="images/dealer.png" width="800px" height="250px">
-            <h2>FOR WATER DEALERS</h2>
+          </div>
+            
+            <div class="img2">
+              <img src="images/dealer3.jpg" width="800px" height="250px">
+            </div>
+              
+            <div class="for">
+              <h2>FOR WATER DEALERS</h2>
             <p>This are our various dealers that are authentic and legit. 
                 So, you need not to worry about not getting your items real! 
                 Be aware, Waterman got your backing for rest assured you're gettinh healthy drinking water.
@@ -127,6 +42,8 @@ th, td {
                 We have on this page the compiled detailed list of each dealers and locations, 
                 so you can contact the very one close by to you.
             </p>
+            </div>
+            
         </section>
 
         <div class="deals">
@@ -135,7 +52,7 @@ th, td {
                     <tr>
                       <th>Dealer's name</th>
                       <th>Contacts</th>
-                      <th>locations</th>
+                      <th>Locations</th>
                     </tr>
                 </thead>
 
@@ -180,11 +97,13 @@ th, td {
             </table>
 
             <div class="enquires">
+              <marquee direction="left" 
+                onmouseover="this.stop();" onmouseout="this.start();">
                 <p>Are you looking to become one of our 
-                    dealers in serving healthy drinkable water? You're on the right path, just 
-                    <span>
-                      <a href="Contact.html" style="text-decoration:none; color: red;
-                       ">click Here!</a></span></p>
+                    dealers in serving healthy drinkable water? You're on the right path, just
+                  <span><a href="Contact.html" style="text-decoration:none; color: red;
+               ">click Here!</a></span></p>
+              </marquee> 
             </div>
         </div>
     </main>

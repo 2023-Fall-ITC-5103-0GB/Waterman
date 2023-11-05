@@ -1,90 +1,141 @@
- /* Header element */
- header {
-    background-color:skyblue;
-    color: rgb(30, 55, 75);
-    font-size: larger;
-    font-style: oblique; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 30px 0 0 0;
-    padding-top: 30px;
- }
- 
- .float-right {
-    float: right!important;
+.header {
+    background-color: navy;
 }
-.main-nav a {
-    display: block;
-    position: relative;
-    color: #acaac1;
-    padding: 7px 15px;
-    transition: 0.3s;
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+
+.logo {
+    display: flex;
+    flex: auto;
+}
+
+ .main-nav {
+    float: ;
+    background-color: rgb(172, 210, 225);
+    padding: 0.5px;
+    margin:auto ;
+    inline-size: 99.9%;
+}
+
+.main-nav li {
+    list-style-type:none ;
     
+}
+
+.main-nav .drop-down:hover .drop-content {
+    display: block;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.drop-down:hover {
+    background-color: navy;
+}
+
+.drop {
+    display: inline-block;
+    text-align: center;
+    padding: 14px auto;
+
+}
+
+.drop-down menu {
+    display: inline-block;
+} 
+
+ .drop-content {
+    display: absolute;
+    position: absolute;
+    background-color: rgb(193, 193, 116);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+    width: 19.2%;
+} 
+
+.drop-content a {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
   }
 
-  .main-nav{
-    background-color: #0a98c0;
-  }
-
-  /* Sidhart's work */
-  .home {
-    background-image: url(/Waterman/images/h3-banner2.png);
-    background-size: 50%;
-    background-repeat: 1;
-  }
-
+  .drop-content a:hover {
+    background-color: navy;
+    color: white;
+  }  
   
- .panel-heading {
-    border: 1px solid #ffcc00;
+  .drop-content  {
+    display: block;
+  }
+
+  /* @media screen and (max-width: 375px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+  } */
+  .home {
+    background-image: url(/Waterman/images/Water-Cooler.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .panel-heading {
+    border: 1px solid rgb(172, 210, 225);
+    border-radius: 0.5cm;
     border-bottom: none;
     padding: 5px;
-    background-color: #ffcc00;
+    background-color: rgb(172, 210, 225);
     color: #0c0c0c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-overflow: ellipsis;
     padding-left: 15px;
     text-align: center;
   font-weight: 600;
-  box-shadow: 0px 0px 6px -1px #AE9F9A
+  box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.2);
   }
 
-
-.panel-body {
+  .panel-body {
     padding: 5px;
     font-size: 17px;
-    border-radius: 0em;
-    box-shadow: 0px 0px 6px -1px #AE9F9A;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0.5cm;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.2);
     padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 15px;
-    background-color: beige;
+    background-color: rgba(193, 193, 116, 0);;
 }
-  .bg-primary {
+
+/* .bg-primary {
     background: #41228e !important;
-  }
+  } */
 
   .container {
     width: 15%;
     margin-bottom: 15ex;
     padding-right: 15px;
     padding-left: 15px;
-    /* margin-right: auto; */
     margin-top: 1ex;
-    /* margin-left: auto; */
 }
 
-
-.container2 {
+/* .container2 {
     width: 100%;
     margin-bottom: 15ex;
     padding-right: 15px;
     padding-left: 15px;
-    /* margin-right: auto; */
     margin-top: 1ex;
-    /* margin-left: auto; */
-}
+} */
 
 .row {
     display: -ms-flexbox;
@@ -94,7 +145,6 @@
     margin-right: -15px;
     margin-left: -15px;
 }
-
 
 .w-100 {
     width: 100%!important;
@@ -106,23 +156,15 @@
     left: 0;
 }
 
-  /* main { display: flex; } */
-
-
-  .secondery-bg {
-    background-color: #22767f;
-}
-
 .container3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
-    padding-right: 15px;
-    color: white;
-    padding-left: 15px;
-    height: 25ex;
+    padding:0 5px 30px 0px;
+    color: rgb(216, 211, 211);
+    /* padding-left: 15px; */
+    height: 15ex;
     margin: auto;
-    /* margin-bottom: 90%; */
-    /* margin-bottom: 2ex; */
-    background-color: #1bb1dc;
+    background-color: navy;
 }
 
 #name {
@@ -137,146 +179,13 @@
     padding-bottom: 30px 0;
     word-spacing: 2cm;
 }
+
 .fund {
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 1ex;
     word-spacing: 3cm;
 }
-.footer-widget {
-    padding-right: 50px;
-    margin: 30px 0;
-    text-align: left !important;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-
-.footer-widget .widget-title {
-    margin-bottom: 30px;
-}
-.col{
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-
-        aside {
-            flex-basis: 100px;
-            background-color: #A3C8E1;
-            height: auto;
-        width: auto; 
-        }
-       
-        
-
-        body {
-            line-height: 1.2;
-            font-family: "Roboto", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            font-size: 15px;
-            color: #4c4c4c;
-            background-color: #fff;
-  overflow-x: hidden;
-          }
-      
-      
-
-        
-
-
-.float-right {
-    float: right!important;
-}
-.main-nav a {
-    display: block;
-    position: relative;
-    color: white;
-    padding: 7px 15px;
-    transition: 0.3s;
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-   
-element.style {
-    font-family: -apple-system, BlinkMacSystemFont,'Product Sans';
-    padding-top: 20%;
-}
-
-.main-nav > ul > li {
-    position: relative;
-    white-space: nowrap;
-    list-style-type: none;
-    float: left;
-}
-/* Rafiat made the current changes */
-.current a {
-    color: blue;  
-}
-a {
-    color: #1bb1dc;
-    transition: 0.5s;
-  }
-
-a:hover,
-a:active,
-a:focus {
-  color: #0a98c0;
-  outline: none;
-  text-decoration: none;
-}
-
-.main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
-  color: #1bb1dc;
-  text-decoration: none;
-}
-
-
-@media (max-width: 760px)
-{
-h1.headfont  {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 30px;
-    line-height: 1.2;
-}
-}
-
-@media (max-width: 888px)
-{
-div.headfont1 {
-    font-size: 16px;
-    line-height: 1.8;
-}
-}
-
-@media screen and (max-width: 480px) and (min-width: 360px)
-{
-div.appicons {
-    margin: 0 auto;
-    display: inline-flex;
-    padding-top: 10px;
-}
-}
-
-*, ::after, ::before {
-	box-sizing: border-box
-}
-
-
 
 /*////////SNEHA///////////*/
 #container1s{
@@ -339,12 +248,12 @@ div.appicons {
     "sidebar header header"
     "sidebar content content"
     "footer  footer  footer";
-    background-color: #fff;
+    /* background-color: #fff; */
   }
  
 
 .box {
-  background-color:#f0eee4 ;
+  background-color:#e8dda55f ;
   color: black;
   border-radius: 5px;
   padding: 10px;
@@ -352,10 +261,10 @@ div.appicons {
   border: 1px solid rgb(255, 245, 238);
 }
 
-.header,
+/* .header,
 .footer {
   background-color: #999;
-}
+} */
 
 .header1s-1{
     width:350px;height:280px;
@@ -367,9 +276,7 @@ div.appicons {
 }
 /*/////////SNEHA////////////*/
 
-
-
-/* Rafiat Style for section #c1 */
+/* ========Rafiat Style for Contact page====== */
 #c1 {
     display: flex;
     align-items: center;
@@ -379,82 +286,79 @@ div.appicons {
 
 #c1 p {
     font-size: 70px;
-    color: #22767f;
-    background-color: skyblue;
-    padding: 0 200px;
-    /* margin-right: 100px; */
+    color: navy;
+    background-color: rgb(172, 210, 225);
+    padding: 40px 200px;
     border-radius: 10px;
     margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-    /* #c1 img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 200px;
-        float: right;
-        margin: 90px;
-        border-radius: 20px;
-    }
+#c1 img {
+    
+    display: flex;
+    justify-content: end;
+    margin-top: 90px;
+    padding: auto;
+    border-radius: 20px;
 
-    @media screen { 
-        #c1 img {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            height: auto;
-            float: inline-start;
-        } 
- }  */
+}
 
 .c1{
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #22767f;
+    color: navy;
     margin: 0 900px 0 30px;
-    /* padding: 50px; */
 }
 
 .btn {
     padding: 10px;
-    border: 5px solid #22767f;
+    border: 5px solid skyblue;
     border-radius: 5px;
     width: 200px; height: 100px;
     font-weight: bolder;
     font-size: x-large;
-    color: #22767f;
-    background-color: skyblue;
+    color: navy;
+    background-color: rgb(172, 210, 225);
 }
 
 .btn:hover {
-    color: #22767f;
+    color: blueviolet;
     cursor: pointer;
 }
 
 /* Style for section #c2 */
 #c2 p {
+    background-color: #0c0c0c2b;
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     margin: 10px;
-    border: #A3C8E1 5px solid;
-    color: #22767f;
-    /* padding: 20px; */
+    padding: 5px 10px;
+    color: navy;
 }
 
 #c2 h3 {
+    margin:30px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
-    color: #22767f;
+    color: navy;
     text-align: center;
     word-spacing: 1cm;
-    background-color: #1bb1dc;
+    background-color: rgb(172, 210, 225);
     padding: 30px;
-    border: 6px dashed #22767f;
+    border: 6px dashed navy;
 }
 
 /* Style for the subscribe form within #c2 */
 .c2 {
     padding: 10px;
+}
+
+.c2 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(200, 95, 95);
+    font-size: 20px;
 }
 
 .c2 form {
@@ -470,23 +374,230 @@ div.appicons {
 }
 
 .c2 button.button_1 {
-    background-color: skyblue;
-    color: #22767f;
-    border: #22767f 2px solid;
+    background-color: rgb(172, 210, 225);
+    color: navy;
+    border: navy 2px solid;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 ::placeholder {
-    color: #22767f;
+    color: rgba(0, 0, 128, 0.4);
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-@media screen {
-    .rafiat {
-    border: #0a98c0 5px solid;
-}
+
+
+@media screen  {
+    .general {
+    border: navy 5px solid;
+    background-color: #0a99c029;
+    }
 
 }
+
+/* @media screen { 
+    #c1 img {
+        height: 300px;
+        flex-wrap: wrap;
+        float: inline-start;
+    }  */
+
+    /* nav{
+        display: flex;
+        flex-direction: column;
+    } */
+
+
+/* ======Rafiat's Dealer page styling======= */
+.back {
+    list-style-type: none;
+}
+.back a {
+    text-decoration: none; 
+    font-size: larger;
+    font-weight: bolder;
+    color: navy; 
+    padding: 40px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    'img1 img2'
+    'for1 for1' ;
+    gap: 2%;
+  
+}
+
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+/* @media screen {
+  .section1 img {
+    width: 100%;
+    float:left;
+    
+}
+} */
+.for {
+    grid-area: for1;
+    width: 90%;
+    padding:15px 25px;
+    margin: 25px 0;
+    float: right;
+    font-style: italic;
+    line-height: 1cm;
+    background-color: rgba(172, 210, 225, 0.562);
+    box-shadow: #0c0c0c;
+  }
+
+h2 {
+    color: navy;
+    font-size: 50px;
+
+}
+
+.section1 {
+  margin: 10px 50px 0 100px;
+  
+}
+.section1 p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: lighter;
+  word-spacing: 10px;
+  color: navy;
+  padding: 0 100px;
+  margin: 0 20px 20px;
+}
+
+main{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.deals {
+  padding: 20px;
+}
+table {
+  border: 5px solid rgb(172, 210, 225);
+  width: 90%;
+  margin-left: 70px;
+  padding: 10px;
+  border-collapse: collapse;
+  color: navy;
+
+}
+
+th {
+    border: 2px solid rgb(172, 210, 225);
+    padding: 10px 30px;
+    margin: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+td {
+    border: 2px solid rgb(172, 210, 225);
+    padding: 10px 30px;
+    margin: 20px;
+    text-align: left;
+    font-size: larger;
+}
+
+.enquires {
+  color: navy;
+  font-size: 25px;
+  animation-delay: 5s;
+
+}
+
+
+/* ======Rafiat's Feedback page======= */
+.feed-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.feed h3 {
+    font-size: 3.625em;
+}
+
+.feed {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    color: navy;
+    margin: 100px 50px 0 50px;
+}
+.form-container {
+    /* display: flex;
+    justify-content: center; */
+    background-color: #e8dda55f ;
+    padding: 2.5em 2.5em;
+    margin: 6.25em 3.13em 6.25em 6.25em;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: navy;
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%; 
+    padding: 5px;
+    margin: 0.313em;
+    border: 1px solid rgba(172, 210, 225, 0.648);
+    border-radius: 5px;
+    background-color: rgba(172, 210, 225, 0.648);
+    /* font-size: 16px; */
+}
+
+::placeholder {
+    padding: 1em;
+    margin: ;
+}
+
+#text {
+    padding: 1em 0px;
+}
+
+#email {
+    padding: 1em 0;
+}
+#phone {
+    padding: 1em 0;
+}
+
+.btn1 {
+font-size: 20px;
+color: navy;
+background-color: rgb(172, 210, 225);
+padding: 20px ;
+border-radius: 10px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ========Rafiat's styling ends here======= */
+ 

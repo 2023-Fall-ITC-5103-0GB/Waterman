@@ -39,24 +39,51 @@ ul2 li {
     </style>
   
    </head>
-    <body>
+    <body class="general">
         <main>
            
 
-            <div style="background-color:#1bb1dc;">
-                    <img class="sticky-logo d-none" src="./images/water.jpg" 
-                    data-rjs="2" alt="Home water delivery" height="100px"></a>
-            </div>    
+            <div class="header">
+                <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+                    data-rjs="2" alt="Home water delivery" height="90px">
+                  
+                </a><!--Linked the logo to home page-->
+                
+            </div>     
         
-            <nav class="main-nav float-right d-none d-lg-block">
+            <nav class="main-nav "> <!--float-right d-none d-lg-block-->
                 <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                    <li style="color: red;margin-right: 250px;font-size: 150%;"> <h1>CUSTOMER SERVICE</h1></li>
-                    <li><a href="home.html" style="padding-top: 20%;">HOME</a></li>
-                    <li class=""><a href="aboutus.html" style="padding-top: 14%;">ABOUT US</a></li>
-                    <li class=""><a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a></li>
-                    <li class=""><a href="carriers.html" style="padding-top: 14%;">Carriers</a></li>
-                    <li class=""><a href="sources.html" style="padding-top: 9%;">Staying Healthy</a></li>
-                                   
+                    <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
+                        <div class="drop-content">
+                            <a href="">Profile</a> <!--Input your page link in href and replace name -->
+                            <a href="sign-up.html">Sign-up</a> <!--Input your page link in href and replace name-->
+                        </div>
+                    </li>
+                    <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
+                        <div class="drop-content">
+                            <a href="custservice.html">Service Request</a>
+                            <a href="">Tracking order</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
+                        <div class="drop-content">
+                            <a href="">Email</a>
+                            <a href="">Location</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%;" class="drop">CARRIERS</a>
+                        <div class="drop-content">
+                            <a href="Dealers.html">Dealers</a>
+                            <a href="feedback.html">Feedback</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%;" class="drop">STAYING HEALTHY</a>
+                        <div class="drop-content">
+                            <a href="">Our Packages</a>
+                            <a href="sourceofwater.html">Source Of Water</a>
+                        </div>
+                    </li>
+                    <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
                 </ul>
             </nav>
         </main>
