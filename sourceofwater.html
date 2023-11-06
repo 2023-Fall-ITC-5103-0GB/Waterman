@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources of Drinking Water</title>
-
-    <link rel="shortcut icon" href="./images/water.jpg" />
-        <link rel ="StyleSheet" href="./css/main.css"/>
+   
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .source {
-            flex: 1 1 calc(50% - 20px);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .source img {
-            max-width: 100%;
-            transition: opacity 0.3s ease;
-        }
-
-        .source-content {
-            opacity: 0;
-            padding: 10px;
-            text-align: center;
-            transition: opacity 0.3s ease;
-        }
-
-        .source:hover .source-content {
-            opacity: 1;
-        }
-
+       
         @media screen and (max-width: 768px) {
-            .source {
+            .sourcesw {
                 flex: 1 1 100%;
             }
         }
     </style>
+    <link rel ="StyleSheet" href="./css/main.css"/>
 </head>
+ 
+<body class="bodysw">
+ 
+    <main >
+           
 
-<body class="general">
+        <div class="header">
+            <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+                data-rjs="2" alt="Home water delivery" height="90px">
+              
+            </a><!--Linked the logo to home page-->
+            
+        </div>    
+    
+        <nav class="main-nav "> <!--float-right d-none d-lg-block-->
+            <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
+                <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
+                    <div class="drop-content">
+                        <a href="profile.html">profile</a> <!--Input your page link in href and replace name -->
+                        <a href="sign-up.html">Sign-up</a> <!--Input your page link in href and replace name-->
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
+                    <div class="drop-content">
+                        <a href="">Service Request</a>
+                        <a href="">Tracking order</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
+                    <div class="drop-content">
+                        <a href="">Email</a>
+                        <a href="">Location</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%;" class="drop">CARRIERS</a>
+                    <div class="drop-content">
+                        <a href="Dealers.html">Dealers</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%;" class="drop">STAYING HEALTHY</a>
+                    <div class="drop-content">
+                        <a href="">Our Packages</a>
+                        <a href="sourceofwater.html">Source Of Water</a>
+                    </div>
+                </li>
+                <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
+            </ul>
+        </nav>
+    </main>
 
-    <div style="background-color:#1bb1dc;">
-        <a href="home.html"><img class="sticky-logo d-none" src="./images/water.jpg" 
-            data-rjs="2" alt="Home water delivery" height="100px">
-          
-        </a><!--Linked the logo to home page-->
-        
-    </div>    
-
-    <div class="container">
-        <div class="source">
+    <div class="containersw">
+        <div class="sourcesw">
             <img src="./images/springwater.jpg" alt="Spring Water">
-            <div class="source-content">
+            <div class="source-contentsw">
                 <h2>Spring Water</h2>
                 <p>This water comes from natural springs and is filtered for purity.</p>
             </div>
         </div>
-
-        <div class="source">
+ 
+        <div class="sourcesw">
             <img src="./images/wellwater.jpg" alt="Well Water">
-            <div class="source-content">
+            <div class="source-contentsw">
                 <h2>Well Water</h2>
                 <p>Extracted from deep within the earth, well water is rich in minerals.</p>
             </div>
         </div>
 
-        <!-- Commenting for now - will try and add more description later -->
-<<<<<<< Updated upstream
-=======
+
 
         <!-- Work on this video too. -->
         
@@ -103,20 +100,55 @@
                 Deutsch   中国人   Italiano   हिन्दी
             </p>
         </div>
->>>>>>> Stashed changes
 
-
-        
-        <!-- <div class="source">
-            <img src="./images/rainwater.png" alt="Rainwater">
-            <div class="source-content">
-                <h2>Rainwater</h2>
-                <!-- Need to add more description -->
-                <!-- <p>Harvested from the skies, rainwater is one of the purest forms of water.</p>
+        <div class="sourcesw">
+            <img src="./images/dams.jpeg" alt="dams">
+            <div class="source-contentsw">
+                <h2>Dams</h2>
+                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
             </div>
-        </div> -->
-    </div> -->
+        </div>
 
+
+
+        <div class="sourcesw">
+            <img src="./images/stream-water.jpeg" alt="Streams">
+            <div class="source-contentsw">
+                <h2>Streams</h2>
+                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
+            </div>
+        </div>
+
+
+        <div class="sourcesw">
+            <img src="./images/rainwater.png" alt="Rains">
+            <div class="source-contentsw">
+                <h2>Rains</h2>
+                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
+            </div>
+        </div>
+ 
+        <!-- Commenting for now - will try and add more description later -->
+ 
+ 
+    
+    </div>
+ 
+    <footer class="container3">
+        <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
+        <div class="lang">
+            <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
+                Deutsch   中国人   Italiano   हिन्दी
+            </p>
+        </div>
+
+        <div class="fund" >
+            Fundraiser   
+            Services   Information Centre  
+            Privacy Policy   Privacy Centre    Cookies   
+            Terms Help
+        </div>
+    </footer>
 </body>
-
+ 
 </html>
