@@ -77,6 +77,55 @@
     display: block;
   }
 
+
+/* uriel css */
+  .containersw {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.sourcesw {
+    flex: 1 1 calc(50% - 20px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-top: 20ex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sourcesw img {
+    max-width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.source-contentsw {
+    opacity: 0;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.sourcesw:hover .source-contentsw {
+    opacity: 1;
+}
+
+bodysw {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* End of Uriel css*/
+
+
   /* @media screen and (max-width: 375px) {
     .main-nav ul {
         flex-direction: column;
@@ -84,7 +133,7 @@
     
   } */
   .home {
-    background-image: url(/Waterman/images/Water-Cooler.jpeg);
+    background-image: url(/images/Water-Cooler.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
