@@ -11,105 +11,53 @@
      crossorigin="anonymous"></script>
 
 
-     <style>
-    #c1 img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100px;
-        /* height: 200px; */
-        float: inline-start;
-        margin-top: 90px;
-        padding: auto;
-        border-radius: 20px;
-    }
-
-    @media screen { 
-        #c1 img {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            height: auto;
-            float: inline-start;
-        } 
-    } 
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .drop-down {
-    display: none;
-    position: absolute;
-    background-color: #ffffff; /* Light background */
-    list-style-type: none;
-    width: 150px;
-    /* Removed border and box-shadow properties */
-}
-
-li:hover .drop-down {
-    display: block;
-}
-
-.drop-down li a {
-    text-decoration: none;
-    display: block;
-    text-align: left; /* Center-align text */
-    padding: 8px;
-    color: #333; /* Darker text color */
-    font-weight: bold; /* Bolder text */
-}
-
-.drop-down li a:hover {
-    background-color: #f1f1f1; /* Background color on hover */
-}
-     </style>
 </head>
 
-<body class="rafiat">
+<body class="general">
     <main>
            
 
-        <div style="background-color:#1bb1dc;">
-            <a href="home.html"><img class="sticky-logo d-none" src="./images/water.jpg" 
-                data-rjs="2" alt="Home water delivery" height="100px">
+        <div class="header">
+            <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+                data-rjs="2" alt="Home water delivery" height="90px">
               
             </a><!--Linked the logo to home page-->
             
         </div>    
     
-        <nav class="main-nav float-right d-none d-lg-block">
+        <nav class="main-nav "> <!--float-right d-none d-lg-block-->
             <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                <li class=""><a href="home.html" style="padding-top: 20%;">HOME</a>
-                    <ul class="drop-down menu">
-                        <li ><a href="">Profile</a></li> <!--Input your page link in href and replace name -->
-                        <li ><a href="sign-up.html">Sign-up</a></li> <!--Input your page link in href and replace name-->
-                   </ul>
+                <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
+                    <div class="drop-content">
+                        <a href="">Profile</a> <!--Input your page link in href and replace name -->
+                        <a href="sign-up.html">Sign-up</a> <!--Input your page link in href and replace name-->
+                    </div>
                 </li>
-                <li ><a href="aboutus.html" style="padding-top: 14%;">ABOUT US</a>
-                    <ul class="drop-down menu">
-                        <li ><a href="">Service Request</a></li>
-                        <li><a href="">Tracking order</a></li>
-                    </ul>
+                <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
+                    <div class="drop-content">
+                        <a href="">Service Request</a>
+                        <a href="">Tracking order</a>
+                    </div>
                 </li>
-                <li class="current"><a href="Contact.html" style="padding-top: 11.5%;">CONTACT US</a>
-                    <ul class="drop-down menu">
-                        <li ><a href="">Email</a></li>
-                        <li ><a href="">Location</a></li>
-                    </ul>
+                <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
+                    <div class="drop-content">
+                        <a href="">Email</a>
+                        <a href="">Location</a>
+                    </div>
                 </li>
-                <li class=""><a href="carriers.html" style="padding-top: 14%;">Carriers</a>
-                    <ul class="drop-down menu">
-                        <li ><a href="">Dealers</a></li>
-                        <li ><a href="feedback.html">Feedback</a></li>
-                    </ul>
+                <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%;" class="drop">CARRIERS</a>
+                    <div class="drop-content">
+                        <a href="Dealers.html">Dealers</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
                 </li>
-                <li class=""><a href="sources.html" style="padding-top: 9%;">Staying Healthy</a>
-                    <ul class="drop-down menu">
-                        <li ><a href="">Our Packages</a></li>
-                        <li ><a href="sourceofwater.html">Source Of Water</a></li>
-                    </ul>
+                <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%;" class="drop">STAYING HEALTHY</a>
+                    <div class="drop-content">
+                        <a href="">Our Packages</a>
+                        <a href="sourceofwater.html">Source Of Water</a>
+                    </div>
                 </li>
-                <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                
+                <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
             </ul>
         </nav>
     </main>
