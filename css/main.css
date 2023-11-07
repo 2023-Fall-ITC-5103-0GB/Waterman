@@ -333,18 +333,26 @@ bodysw {
     padding: 20px;
 }
 
+<<<<<<< Updated upstream
 /* .image {
     float: right;
     margin: 0 50px;
     
 } */
+=======
+.image {
+    float: right;
+    margin: 0 50px;
+    
+}
+>>>>>>> Stashed changes
 #c1 p {
     font-size: 70px;
     color: navy;
     background-color: rgb(172, 210, 225);
     padding: 40px 200px;
     border-radius: 10px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -717,4 +725,33 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
+<<<<<<< Updated upstream
   }
+=======
+  }
+
+    /* Media Queries*/
+
+
+  /* Main CSS styles that apply for any screen size go here */
+
+/* Example for screens smaller than 600px */
+@media (max-width: 600px) {
+    .header img.logo {
+        height: auto;
+        width: 100%;
+    }
+    
+    nav.main-nav ul {
+        font-size: smaller; /* Adjust font-size for small devices */
+    }
+    
+    nav.main-nav ul li.drop-down .drop-content {
+        display: block; /* Maybe you want to change how dropdowns work on mobile */
+    }
+    
+    
+
+    
+}
+>>>>>>> Stashed changes
