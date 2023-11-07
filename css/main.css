@@ -333,6 +333,11 @@ bodysw {
     padding: 20px;
 }
 
+/* .image {
+    float: right;
+    margin: 0 50px;
+    
+} */
 #c1 p {
     font-size: 70px;
     color: navy;
@@ -446,6 +451,13 @@ bodysw {
     }
 
 }
+
+/* @media screen and (max-width: 375) {
+    .contact {
+        display: grid;
+        grid-template-rows: ;
+    }
+} */
 
 /* @media screen { 
     #c1 img {
