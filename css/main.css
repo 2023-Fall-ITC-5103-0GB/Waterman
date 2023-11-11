@@ -334,19 +334,13 @@
     padding: 20px;
 }
 
-.image {
-    float: right;
-    margin: 0 50px;
-    
-}
-
 #c1 p {
     font-size: 70px;
     color: navy;
     background-color: rgb(172, 210, 225);
     padding: 40px 200px;
     border-radius: 10px;
-    /* margin-right: 50px; */
+    margin-right: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -457,13 +451,6 @@
     }
 
 }
-
-/* @media screen and (max-width: 375) {
-    .contact {
-        display: grid;
-        grid-template-rows: ;
-    }
-} */
 
 /* @media screen { 
     #c1 img {
@@ -730,12 +717,11 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
-<<<<<<< Updated upstream
-  }
-=======
   }
 
-    /* Media Queries*/
+
+
+  /* Media Queries*/
 
 
   /* Main CSS styles that apply for any screen size go here */
@@ -759,4 +745,5 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     
 }
->>>>>>> Stashed changes
+
+
