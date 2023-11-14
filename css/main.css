@@ -116,7 +116,7 @@
     opacity: 1;
 }
 
-bodysw {
+.bodysw {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -328,6 +328,7 @@ bodysw {
 /* ========Rafiat Style for Contact page====== */
 #c1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -350,14 +351,18 @@ bodysw {
     margin-top: 90px;
     padding: auto;
     border-radius: 20px;
+    width: 800px;
 
 }
 
 .c1{
-    font-size: larger;
+    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: navy;
-    margin: 0 900px 0 30px;
+    white-space: wrap;      /*Worked on this with Taken*/
+    overflow: hidden;       /*Worked on this with Taken*/
+    text-overflow: clip;    /*Worked on this with Taken*/
+    /* margin: 0 900px 0 30px; */
 }
 
 .btn {
@@ -473,6 +478,10 @@ bodysw {
 }
 
 .section1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .section1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(2, 1fr);
@@ -481,13 +490,14 @@ bodysw {
     'for1 for1' ;
     gap: 2%;
   
-}
+} */
 
 .img1 {
-    grid-area: img1;
+    margin-right: 20px;
+    /* grid-area: img1; */
 }
 .img2 {
-    grid-area: img2;
+    /* grid-area: img2; */
 }
 /* @media screen {
   .section1 img {
@@ -573,8 +583,10 @@ td {
 
 /* ======Rafiat's Feedback page======= */
 .feed-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
 }
 
 .feed h3 {
