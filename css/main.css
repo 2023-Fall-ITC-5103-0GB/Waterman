@@ -340,7 +340,7 @@
     background-color: rgb(172, 210, 225);
     padding: 40px 200px;
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -363,6 +363,10 @@
     overflow: hidden;       /*Worked on this with Taken*/
     text-overflow: clip;    /*Worked on this with Taken*/
     /* margin: 0 900px 0 30px; */
+}
+
+.image {
+    float: right;
 }
 
 .btn {
@@ -422,9 +426,10 @@
 
 .c2 input[type="email"] {
     width: 40%;
-    padding: 10px;
+    padding: 5px;
     border: 2px #22767f thin;
     border-radius: 5px;
+    background-color: rgba(172, 210, 225, 0.573);
 }
 
 .c2 button.button_1 {
@@ -437,10 +442,12 @@
 }
 ::placeholder {
     color: rgba(0, 0, 128, 0.4);
-    font-size: large;
+    font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    padding: 10px 0;
 }
+
+
 
 
 
