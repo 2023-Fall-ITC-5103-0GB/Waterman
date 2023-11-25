@@ -15,7 +15,63 @@
     <link rel ="StyleSheet" href="./css/main.css"/>
    
     </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var searchBox = document.getElementById('search-box');
+    
+            searchBox.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Stop the form from submitting
+                    alert('Search currently not enabled');
+                }
+            });
+        });
 
+        // Function to call when the page is fully loaded
+window.onload = function() {
+  getLocation();
+};
+
+function getLocation() {
+  // Check if the Geolocation API is supported
+  if (navigator.geolocation) {
+    // Request the current position
+    // If the user allows it, the callback function will get the position
+    // If the user denies it, the error callback will be called
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    // If the browser doesn't support Geolocation
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  // Function to handle the position object returned by the Geolocation API
+  // position.coords.latitude and position.coords.longitude will give the coordinates
+  alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      // User denied the request for Geolocation
+      alert("User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      // Location information is unavailable
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      // The request to get user location timed out
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      // An unknown error occurred
+      alert("An unknown error occurred.");
+      break;
+  }
+}
+    </script>
     
   
    </head>
@@ -66,6 +122,8 @@
                     <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
                 </ul>
             </nav>
+
+            
         </main>
                         
               
@@ -82,7 +140,7 @@
                                 </p>
 
                                 <div class="panel-body">
-                                    <marquee style="height: 290px;" direction="down" 
+                                    <marquee style="height: 290px;" direction="up" 
                                     onmouseover="this.stop();" onmouseout="this.start();">
                                         <ul style="line-height: 30px;padding-left: 10px;">
                                             <li>Scarborough</li> 
@@ -107,6 +165,35 @@
             </div>                              
         </section>
 
+         <!-- Information Section -->
+         <div class="info-section">
+            <div class="info-card">
+                <img src="./images/article-1.jpg" alt="Education about Sustainability">
+                <div class="info-card-container">
+                    <h4 class="info-card-title">EDUCATION ABOUT SUSTAINABILITY IS CRUCIAL FOR CREATING A GREENER FUTURE FOR THE NEXT GEN</h4>
+                    <p class="info-card-text">Educating the future generation about building a plastic circular economy.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./images/article-2.jpg" alt="pH in Natural Mineral Water">
+                <div class="info-card-container">
+                    <h4 class="info-card-title">pH in Natural Mineral Water - Understanding Basics to Identify the Best Drinking Water</h4>
+                    <p class="info-card-text">Find out the impact of lead in your drinking water, and how to eliminate it.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./images/article-3.jpg" alt="5 Reasons Why Your Skin Needs to Stay Hydrated">
+                <div class="info-card-container">
+                    <h4 class="info-card-title">5 Reasons Why Your Skin Needs to Stay Hydrated</h4>
+                    <p class="info-card-text">Drinking mineral water that is going to prove very beneficial for your skin in the long run.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+           
+        </div>
+
         <h1 class="headfont" style="color: darkblue; text-align: center; padding-top: 5ex;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                 Water can delivery services in Canada
@@ -130,23 +217,42 @@
                 <img src="./images/playstore.png" width="160px;" alt="App Store Paanilao"></a>
         </div>
 
-        <!-- <div class="container2">
-            <img class="img-fluid w-100" src="./images/h3-banner2.png" alt="Drinking Water Supplier near me">
-        </div> -->
+       
 
-        <footer class="container3">
-            <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
-            <div class="lang">
-                <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
-                    Deutsch   中国人   Italiano   हिन्दी
-                </p>
+        <footer class="footer">
+            <div class="footer-column">
+                <h3>FIND A STORE</h3>
+                <div class="search-box">
+                    <input type="text" id="search-box" placeholder="City or Zip code">
+                    <button id="search-button">🔍</button>
+                </div>
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <!-- Icons should be added here -->
+                    <!-- <a href="#"><img src="./images/facebook-icon.png" alt="Facebook"></a> -->
+                    <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+                </div>
             </div>
-    
-            <div class="fund" >
-                Fundraiser   
-                Services   Information Centre  
-                Privacy Policy   Privacy Centre    Cookies   
-                Terms Help
+            <div class="footer-column">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>ABOUT </h3>
+                <ul>
+                    <li><a href="#">Waterman Company</a></li>
+                    <li><a href="#">Corporate Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
             </div>
         </footer>
     </body>
