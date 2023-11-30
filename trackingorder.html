@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Tracking Order</title>
+    
+    <link rel ="StyleSheet" href="./css/main.css"/>
+    <style>
+         h1{
+        margin-left: 480px;
+      } 
+        nav{
+    margin-left: 1100px;
+        } 
+        nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+        }
+        nav ul{
+    list-style: none;
+        }
+        #sec1{
+     background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 950px;height:1000px;padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        input{
+    margin-top: 10px;margin-bottom: 10px;
+    height: 30px;width:320px;
+    }
+    .circle {
+width: 80px; 
+height: 80px;
+border-radius: 50%; 
+}
+.flex-circle{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+#shidetails {
+    margin: 0 auto;width: 600px;height:550px;
+    background-color: antiquewhite;
+    border: 1px solid #ccc;position: relative;top: 80px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#shippingdetails{
+    text-decoration: none;
+    color: #007bff;position: relative;top:50px;
+}
+
+#text{
+    padding: 100px;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+        h1 {
+            margin-left: 15px; 
+        }
+
+        nav {
+            margin-left: 350px; 
+        }
+        #sec1 {
+            width: 100%; 
+            padding: 10px;
+        }
+        #sec2{
+            margin-left: 10px;
+        }
+
+        #shidetails {
+            width: 100%; /* Make it full width */
+            top: 10px; /* Adjust as needed */
+            padding: 10px;
+        }
+        .lang{
+            font-size: small;
+        }
+        .fund{
+            font-size: small;
+        }
+        .footer-widget{
+            font-size: small;
+        }
+        /* .container3{
+            height:800px;
+        } */
+    }
+
+
+    </style>
+</head>
+<body class="general">
+    <main>
+        <div class="header">
+            <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+                data-rjs="2" alt="Home water delivery" height="90px">
+              
+            </a><!--Linked the logo to home page-->
+            
+        </div>   
+            <h1>TRACK YOUR ORDER</h1>
+            <nav>
+                <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
+                    <li><a href="aboutus.html" style="padding-top: 20%;">HOME</a></li>   
+                </ul>
+            </nav>
+    </main>
+
+    <section id="sec1">
+        <form>
+            <label for="orderid"><b>ENTER YOUR ORDER ID AND CHECK ORDER STATUS</b></label><br>
+                    <input type="text" id="oid" name="oid"><br>
+                    <input type="submit"><br>
+        </form>
+        <h2>ORDER STATUS </h2>
+        <div class="flex-circle">
+        <div class="circle" style="background-color:green;">
+        </div>
+        <p>Order Shipped</p>
+        <div class="circle" style="background-color:#ccc;">
+        </div>
+        <p>In Transit</p>
+        <div class="circle" style="background-color:#ccc;">
+        </div>
+        <p>Delivered</p>
+       </div>
+       <section id="sec2">
+        <a href="#" id="shippingdetails" style="margin-top: 30px;">CLICK HERE FOR MORE ORDER AND SHIPPING DETAILS</a>
+    </section>
+       <div id="shidetails">
+        <div id="text">
+        <p>Order Number: </p>
+        <p>Customer Name: </p>
+        <p>Contact Details:</p>
+        <p>Order Date: </p>
+        <p>List of items in the order</p>
+        <p>Total Amount: $ </p>
+        
+        <p>Shipping Address: </p>
+        <p>Shipping Carrier: </p>
+        <p>Estimated Delivery Date: </p>
+        </div>
+
+       </div>
+       
+    </section>
+
+    <div class="container3" style="margin-top:20px; height:28%;">
+            
+        <footer class="footer-widget" style=" border: 2% solid black;">
+            <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
+            <div class="lang">
+                <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
+                    Deutsch   中国人   Italiano   हिन्दी
+                </p>
+            </div>
+            <div class="fund">
+                Fundraiser   
+                Services   Information Centre  
+                Privacy Policy   Privacy Centre    Cookies   
+                Terms Help
+            </div>
+            </footer>
+    </div>
+
+
+</body>
+</html>
+
+

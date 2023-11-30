@@ -4,20 +4,20 @@
     <link rel ="StyleSheet" href="./css/main.css"/>
     <link rel="shortcut icon" href="./images/water.jpg" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+   <script src="aboutus.js"></script>
 <style>
 
-
-  a {
+a {
             text-decoration: none;
             color: #000; }
         li1 {
-            background:none/* #C8DFEE*/;
-            width: 400px;
-            margin: 0 15px 15px 0;
+            background:  rgb(172, 210, 225);
+            width: 200px;height: 140px;
+            margin: 25 15px 15px 0;
             padding: 5px;
-            border:2px solid black;
-            text-align: center; }
+            border:2px solid none;
+            text-align: center; 
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);}
         
 		/* FLEXIBLE BOX STYLES */
 		ul1 {
@@ -27,16 +27,60 @@
             flex-direction: row; 
             flex-wrap: wrap;
             justify-content: space-around;
+            
         }
+        #gmap{
+            display: flex;
+            list-style-type: none;
+            flex-direction: row; 
+            justify-content: space-around;
+        }
+        .box1{
+            width: 1150px;
+            height: 80px;
+            background-color: white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            
+        }
+        input[type=text]{
+            width: 300px;
+            height: 40px;
+        }
+        @media screen and (max-width: 600px){
+            .box1{
+            width: 100%;
+            height:auto;
+            }
+            h1,h2{
+                font-size:large;
+            }
+            .general,p,.fund{
+                font-size: small;
+            }
+            #name{
+                font-size: small;
+            }
+            
+            #gmap {
+                flex-direction: column;
+                align-items: center;
+            }
 
+            iframe {
+                width: 100%;
+                height: 300px; 
+            }
+            ul1 li1{
+                width: 50%;
+                height: 120px; 
+            }
+        }
 
    
 </style>
 
 </head>
-<body class="general">
-   
-
+<body class="">
         
     <div class="header">
         <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
@@ -57,7 +101,7 @@
             <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
                 <div class="drop-content">
                     <a href="custservice.html">Service Request</a>
-                    <a href="">Tracking order</a>
+                    <a href="trackingorder.html">Tracking order</a>
                 </div>
             </li>
             <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
@@ -84,7 +128,7 @@
            
     <div id="container1s">
         <h1><center>ABOUT US</center></h1>
-        <h2 class="color1s"><i>COMPANY PROFILE</i></h2>
+        <section class="box1"><h2 class="color1s"><i>COMPANY PROFILE</i></h2></section>
         <main>
         <p style="text-align: justify;">
             Water is an essential part of life. Nowadays we are finding ourselves
@@ -98,37 +142,61 @@ The truth is, our cities (and everything in it) depend on water. We all drink it
              of people for instantly order water cans with simple steps. We supply water cans, water bottles, large containers etc. Users
              can also have the choice to select their preferences and order a customized water bottles. 
         </p>
-        <h2 class="color1s"><i>MISSION</i></h2>
+        <section class="box1"><h2 class="color1s"><i>MISSION</i></h2></section>
         <div class="container3s">
             <blockquote><i>Our mission is to create a world where no one suffer from lack of 
                 pure drinking water. We will try to establish our app world wide. </i>
             </blockquote>
 
         </div>
+        <section class="box1">
+            <h2 class="color1s"><i>LOCATE OUR STORE</i></h2>
+        </section>
+       <p>We have warehouses accross the country.You can search it using our warehouse locator</p>
+       <section id="gmap">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d369348.50952928705!2d-79.88722372962417!3d43.678635018917916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1697858150876!5m2!1sen!2sca" 
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <div id="maplocation">
+        <p>Search for location near you</p>
+        <form onsubmit="searchPlace();return false;">
+            <input type="text" id="place" name="mapsearch" placeholder="Search...">
+            <button>Search</button>
+        </form>
+        <ul style="margin-top: 20px;">
+            <li>Cape Breton Island</li>
+            <li>Tofino, British Columbia</li>
+            <li>Charlevoix, Québec</li>
+            <li>Peggy's Cove</li>
+        </ul>
+        <div id="result1"></div>
+       </div>
+       </section>
 
-        <h2 class="color1s"><i>WE...</i></h2>
-        <div class="container5s">
+        <section class="box1"><h2 class="color1s"><i>WE...</i></h2></section>
+        <div >
             <ul1>
-                <li1> <img src="./images/face_avatar.jpg" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
+                <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
                     <p><b>Siddarth</b>
                     <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>&nbsp
                     <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="./images/face_avatar.jpg" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
+                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
                         <p><b>Uriel</b>
                         <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
                         &nbsp
                         <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="./images/face_avatar.jpg" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
+                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
                         <p><b>Mushfiq</b>
                         <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
                         &nbsp
                         <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="./images/face_avatar.jpg" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
+                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
                         <p><b>Rafiat</b>
                         <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
                         &nbsp
                         <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="./images/face_avatar.jpg" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
+                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
                          <p><b>Sneha</b>
                          <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
                          &nbsp
@@ -137,31 +205,27 @@ The truth is, our cities (and everything in it) depend on water. We all drink it
             </ul1>
             <p>Click <a href="#" style="color: red;">here</a> for more info..</p>
                 </div>
-              
         </div>
-
-       
+        <button id="scrollTopBtn" onclick="scrolltoTop()">^</button>
         </main>
-        
     </div>
-        
+
+    <div class="container3" style="height:28%;">
             
-        <footer class="container3">
+        <footer class="footer-widget" style=" border: 2% solid black;">
             <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
             <div class="lang">
                 <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
                     Deutsch   中国人   Italiano   हिन्दी
                 </p>
             </div>
-    
-            <div class="fund" >
+            <div class="fund">
                 Fundraiser   
                 Services   Information Centre  
                 Privacy Policy   Privacy Centre    Cookies   
                 Terms Help
             </div>
-        </footer>
-    
-
+    </div>
+</footer>
 </body>
 </html>
