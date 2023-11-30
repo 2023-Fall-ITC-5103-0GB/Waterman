@@ -27,50 +27,6 @@
             });
         });
 
-        // Function to call when the page is fully loaded
-window.onload = function() {
-  getLocation();
-};
-
-function getLocation() {
-  // Check if the Geolocation API is supported
-  if (navigator.geolocation) {
-    // Request the current position
-    // If the user allows it, the callback function will get the position
-    // If the user denies it, the error callback will be called
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else {
-    // If the browser doesn't support Geolocation
-    alert("Geolocation is not supported by this browser.");
-  }
-}
-
-function showPosition(position) {
-  // Function to handle the position object returned by the Geolocation API
-  // position.coords.latitude and position.coords.longitude will give the coordinates
-  alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
-}
-
-function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-      // User denied the request for Geolocation
-      alert("User denied the request for Geolocation.");
-      break;
-    case error.POSITION_UNAVAILABLE:
-      // Location information is unavailable
-      alert("Location information is unavailable.");
-      break;
-    case error.TIMEOUT:
-      // The request to get user location timed out
-      alert("The request to get user location timed out.");
-      break;
-    case error.UNKNOWN_ERROR:
-      // An unknown error occurred
-      alert("An unknown error occurred.");
-      break;
-  }
-}
     </script>
     
   
@@ -129,7 +85,7 @@ function showError(error) {
               
         
                      
-        <section class="hero-area bg-primary"  id="home">
+        <section id="home" style="margin-bottom: 45ex;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3" style="margin-top: 70px;z-index: 1;">
@@ -160,15 +116,24 @@ function showError(error) {
                  </div>
             </div> 
 
-            
+            <div class="subscription-section">
+                <div class="subscription-content">
+                  <img src="./images/subscription.png" alt="About Subscription Plan">
+                </div>
+                <div class="subscription-image">
+                  <img src="./images/family-drinking-water.png" alt="Family enjoying fresh water">
+                </div>
+              </div>
+              
+              </section>
           
             </div>                              
         </section>
 
-         <div class="info-section">
+         <div class="info-section" >
             <div class="info-card">
-                <img src="./images/article-1.jpg" alt="Education about Sustainability">
-                <div class="info-card-container">
+                <img class="info-image" src="./images/article-1.jpg" alt="Education about Sustainability">
+                <div class="info-content">
                     <h4 class="info-card-title">EDUCATION ABOUT SUSTAINABILITY IS CRUCIAL FOR CREATING A GREENER FUTURE FOR THE NEXT GEN</h4>
                     <p class="info-card-text">Educating the future generation about building a plastic circular economy.</p>
                     <a href="#">Read More</a>
@@ -176,15 +141,15 @@ function showError(error) {
             </div>
             <div class="info-card">
                 <img src="./images/article-2.jpg" alt="pH in Natural Mineral Water">
-                <div class="info-card-container">
+                <div class="info-content">
                     <h4 class="info-card-title">pH in Natural Mineral Water - Understanding Basics to Identify the Best Drinking Water</h4>
                     <p class="info-card-text">Find out the impact of lead in your drinking water, and how to eliminate it.</p>
                     <a href="#">Read More</a>
                 </div>
             </div>
             <div class="info-card">
-                <img src="./images/article-3.jpg" alt="5 Reasons Why Your Skin Needs to Stay Hydrated">
-                <div class="info-card-container">
+                <img class="info-image" src="./images/article-3.jpg" alt="5 Reasons Why Your Skin Needs to Stay Hydrated">
+                <div class="info-content">
                     <h4 class="info-card-title">5 Reasons Why Your Skin Needs to Stay Hydrated</h4>
                     <p class="info-card-text">Drinking mineral water that is going to prove very beneficial for your skin in the long run.</p>
                     <a href="#">Read More</a>
