@@ -244,28 +244,12 @@
     margin: 40px;
     padding-top: 50px;
 }
-.container2s{
-    padding-top: 20px;float: left;
-    width:350;height:400;
-
-}
-/* .container3s{
-    width: 50px;height: 1opx;
-    border: 1px solid black;
-    position: relative;left: 300px;
-} */
 .container4s{
     width:400px;height: 60px;
     background-color: none;
     border: 1px solid #d8d8d8;
 }
-/*.container5s{
-   border: 5px solid skyblue;
-   background-image: url('./images/bgaboutus.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    height: 500px;
-}*/
+
 
 
 .color1s{
@@ -275,20 +259,24 @@
 .sidebar1s {
     grid-area: sidebar;
     height: 1050px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 .content1s {
     grid-area: content;
     height: 700px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .header1s {
     grid-area:header;
     height: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .footer1s {
     grid-area: footer;
     height: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
         
@@ -300,12 +288,14 @@
     "sidebar header header"
     "sidebar content content"
     "footer  footer  footer";
-    /* background-color: #fff; */
+    background-color: #fff;
+    
   }
- 
+
+  
 
 .box {
-  background-color:#e8dda55f ;
+  background-color:#f0eee4 ;
   color: black;
   border-radius: 5px;
   padding: 10px;
@@ -313,18 +303,26 @@
   border: 1px solid rgb(255, 245, 238);
 }
 
-/* .header,
+.header,
 .footer {
   background-color: #999;
-} */
-
-.header1s-1{
-    width:350px;height:280px;
-    border: 1px solid black ;
-    float:left;margin-left: 30px;
 }
 .headertext{
     position: relative;top:400px;left:300px;color: black;
+
+}
+
+#scrollTopBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 230px;
+    right: 20px;
+    background-color:grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
 /*/////////SNEHA////////////*/
 

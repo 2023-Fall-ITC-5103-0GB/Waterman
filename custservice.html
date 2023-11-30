@@ -4,15 +4,17 @@
      <link rel="shortcut icon" href="./images/water.jpg" />
      <link rel ="StyleSheet" href="./css/main.css"/>
     
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+     </title>
      <style>
- 
- 
+       h1{
+         margin-left: 480px;
+       } 
+     
    #cus1{
      background-image: url('./images/custservice.jpg');
      background-repeat: no-repeat;
      background-size: 100%;
-     height: 800px;margin-top: 90px;
+     height: 800px;
  }
  input{
      margin-top: 10px;margin-bottom: 10px;
@@ -35,58 +37,81 @@
      border: 1px solid black;
      margin-bottom: 10px;padding: 10px;
  }
+ ul3 li {
+     list-style: none;
+     width:360px;height:280px;
+    border: 1px solid black ;margin-left: 10px;
+    float: left;
+ }
+ nav{
+     margin-left: 1100px;
+ }
+ nav a{
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+ }
+ nav ul{
+     list-style: none;
+ }
+
+ @media screen and (max-width: 600px){
+    
+            h1,h2{
+                font-size:large;
+            }
+            .general,p,.fund{
+                font-size: small;
+            }
+            #cus1{
+        background-size: 100%;
+        margin-top: 30px;
+            }
+            .wrapper1s {
+                width: 100%;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+        }
+        .header1s {
+         height: 600px;
+            }
+            .headertext{
+            position: relative;top:150px;left:40px;
+        }
+        #hed h1{
+            position: relative;right:300px;
+        }
+        #hed nav ul li{
+            position: relative;right:750px;
+        }
+
+ }
  
      </style>
    
     </head>
      <body class="general">
-         <main>
-            
- 
-             <div class="header">
-                 <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
-                     data-rjs="2" alt="Home water delivery" height="90px">
-                   
-                 </a><!--Linked the logo to home page-->
-                 
-             </div>     
+             
+    <div class="header">
+        <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+            data-rjs="2" alt="Home water delivery" height="90px">
+          
+        </a><!--Linked the logo to home page-->
+        
+    </div>   
+            <section id="hed">
+                 <h1>CUSTOMER SERVICE</h1>
+                 <nav>
+                     <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
+                         <li><a href="aboutus.html">HOME</a></li>   
+                     </ul>
+                 </nav>
+                 </section>
          
-             <nav class="main-nav "> <!--float-right d-none d-lg-block-->
-                 <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                     <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
-                         <div class="drop-content">
-                             <a href="">Profile</a> <!--Input your page link in href and replace name -->
-                             <a href="sign-up.html">Sign-up</a> <!--Input your page link in href and replace name-->
-                         </div>
-                     </li>
-                     <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
-                         <div class="drop-content">
-                             <a href="custservice.html">Service Request</a>
-                             <a href="">Tracking order</a>
-                         </div>
-                     </li>
-                     <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
-                         <div class="drop-content">
-                             <a href="">Logistics</a>
-                             <a href="">Book A Demo</a>
-                         </div>
-                     </li>
-                     <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%;" class="drop">CARRIERS</a>
-                         <div class="drop-content">
-                             <a href="Dealers.html">Dealers</a>
-                             <a href="feedback.html">Feedback</a>
-                         </div>
-                     </li>
-                     <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%;" class="drop">STAYING HEALTHY</a>
-                         <div class="drop-content">
-                             <a href="">Our Packages</a>
-                             <a href="sourceofwater.html">Source Of Water</a>
-                         </div>
-                     </li>
-                     <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
-                 </ul>
-             </nav>
-         </main>
          <div id="cus1">
          <!--<img src="./images/custservice.jpg"  style="width:1250px;height: 700px;" alt="customer service image"/>  -->
          <p  class="headertext" style="font-size:160%;"><i>NEED SUPPORT FROM OUR TEAM...?</i></p>
@@ -97,25 +122,23 @@
  
          <div class="wrapper1s">
              <div class="box header1s">
-                 <div class="header1s-1">
-                     <a href="tel:6739254013"><img src="./images/mob.png" style="width: 80px;height: 60px;
-                     margin-top:30px;margin-left: 140px;"
-                      alt="picture of telephone"></a>
-                     <p><center>Talk with our team...</center></p>
-                <p style="margin-left: 30px;">Click to call a customer support rep.</p>
-                        <p><center> <a href="tel:6739254013">+1 6739254013</a></center></p>
-                 </div>
-                 <div class="header1s-1">
-                     <a href="tel:6739254013"><img src="./images/advisor.png" style="width: 60px;
-                     margin-top:30px;height: 60px;margin-left: 120px;"
-                         alt="picture of telephone"></a>
-                        <p><center>Want to talk with our advisor...</center></p>
-                   <p style="margin-left: 30px;">Enter your email address and we will contact you with the right person.</p>
-                   <input type="email" id="email" name="email" 
-                   placeholder="email address" style="margin-left: 15px;">
-                 </div>
-                
-                
+                 
+                    <ul3>
+                        <li> <a href="tel:6739254013"><img src="./images/mob.png" style="width: 80px;height: 60px;
+                            margin-top:30px;margin-left: 140px;"
+                             alt="picture of telephone"></a>
+                            <p><center>Talk with our team...</center></p>
+                       <p style="margin-left: 30px;">Click to call a customer support rep.</p>
+                               <p><center> <a href="tel:6739254013">+1 6739254013</a></center></p></li>
+                            <li><a href="tel:6739254013"><img src="./images/advisor.png" style="width: 60px;
+                                margin-top:30px;height: 60px;margin-left: 120px;"
+                                    alt="picture of telephone"></a>
+                                   <p><center>Want to talk with our advisor...</center></p>
+                              <p style="margin-left: 30px;">Enter your email address and we will contact you with the right person.</p>
+                              <input type="email" id="email" name="email" 
+                              placeholder="email address" style="margin-left: 15px;"></li>
+                               
+                            </ul3>
              </div>
              <div class="box sidebar1s">
                  <p style="font-size:x-large;"><b>CUSTOMER REVIEWS</b></p>
@@ -199,4 +222,3 @@
          </footer>
      </body>
      </html>
-   
