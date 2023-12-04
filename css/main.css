@@ -1,5 +1,36 @@
-.header {
+#search1::placeholder {
+    color: navy;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 15px;
+}
+
+.search {
+    margin-left: auto; /* This will position the form to the right */
+    padding: 20px 20px; /* Add padding for spacing around the form elements */
+}
+
+.header form {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.header input[type="search"] {
+    width: 600px;
+    padding: 10px 50px 10px 0;
+    border: 1px navy thin;
+    border-radius: 5px;
+    background-color: rgb(172, 210, 225);
+}
+
+.header input[type="button"] {
+    font-weight: bolder;
+    font-size: larger;
     background-color: navy;
+    color: whitesmoke;
+    border: navy 2px solid;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .logo {
@@ -9,7 +40,7 @@
 
  .main-nav {
     float: ;
-    background-color: rgb(172, 210, 225);
+    background-color: navy;
     padding: 0.5px;
     margin:auto ;
     inline-size: 99.9%;
@@ -303,12 +334,17 @@
   border: 1px solid rgb(255, 245, 238);
 }
 
-.header,
-.footer {
-  background-color: #999;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(172, 210, 225);
+    padding: 10px;
+    
 }
 .headertext{
-    position: relative;top:400px;left:300px;color: black;
+    position: relative;top:400px;left:300px;color: navy;
 
 }
 
@@ -421,13 +457,13 @@
 }
 
 .c2 form {
-    margin-top: 20px;
+    margin: 20px;
 
 }
 
 .c2 input[type="email"] {
     width: 40%;
-    padding: 5px;
+    padding: 15px;
     border: 2px #22767f thin;
     border-radius: 5px;
     background-color: rgba(172, 210, 225, 0.573);
@@ -441,7 +477,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
-::placeholder {
+#email1::placeholder {
     color: rgba(0, 0, 128, 0.4);
     font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -488,6 +524,7 @@
 .section1 {
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 50px 0 100px;
 }
 /* .section1 {
     display: grid;
@@ -501,19 +538,10 @@
 } */
 
 .img1 {
-    margin-right: 20px;
+    margin: 50px 10px;
     /* grid-area: img1; */
 }
-.img2 {
-    /* grid-area: img2; */
-}
-/* @media screen {
-  .section1 img {
-    width: 100%;
-    float:left;
-    
-}
-} */
+
 .for {
     grid-area: for1;
     width: 90%;
@@ -522,7 +550,7 @@
     float: right;
     font-style: italic;
     line-height: 1cm;
-    background-color: rgba(172, 210, 225, 0.562);
+    /* background-color: rgba(172, 210, 225, 0.562); */
     box-shadow: #0c0c0c;
   }
 
@@ -533,11 +561,11 @@ h2 {
 }
 
 .section1 {
-  margin: 10px 50px 0 100px;
+  
   
 }
-.section1 p {
-  font-size: 20px;
+.for p {
+  font-size: 30px;
   font-style: normal;
   font-weight: lighter;
   word-spacing: 10px;
@@ -757,8 +785,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* siddharth's footer changes */
 
-.footer {
-    background-color: #333; /* Dark background for contrast */
+
     color: white;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
@@ -777,8 +804,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
 }
 
-.footer-column ul li a {
-    color: #ccc;
+
     text-decoration: none;
     transition: color 0.3s ease;
 }

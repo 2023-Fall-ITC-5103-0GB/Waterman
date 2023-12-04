@@ -8,15 +8,24 @@
         <link rel ="StyleSheet" href="./css/main.css"/>
         <link rel="stylesheet" href="css/Rafiat.css">
     
+        <script src="/RafiatJavaScript/Dealers.js"></script>
 
 </head>
-<body class="general">
+<body class="">
 
   
     <main>
-        <div class="header">
-            <a href="home.html"><img class="sticky-logo d-none" src="./images/Wat.jpg" 
+        <div class="header1">
+            <a href="home.html"><img class="sticky-logo d-none" src="./images/Wat-removebg-preview.png" 
             data-rjs="2" alt="Home water delivery" height="90px"></a><!--Linked the logo to home page-->
+
+            <div class="header2">
+              <form id="search" method="get" action="Dealers.html">
+                  <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
+                  <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
+                  <input type="button" value="Search" onClick="" />
+              </form>
+          </div>
         </div>
         
         <nav>
@@ -26,13 +35,9 @@
         </nav>
 
         <section class="section1">
-          <div class="img1">
-            <img src="images/dealer.png" width="800px" height="250px">
-          </div>
-            
-            <div class="img2">
-              <img src="images/dealer3.jpg" width="800px" height="250px">
-            </div>
+            <!-- <div class="img2">
+              <img src="images/dealer3.jpg" name="slideshow" id="deliver1" width="600px" height="250px">
+            </div> -->
               
             <div class="for">
               <h2>FOR WATER DEALERS</h2>
@@ -45,7 +50,38 @@
             </p>
             </div>
             
+            <div class="img1">
+              <a href="#">
+              <img src="images/dealer.png" name="slideshow" id="deliver" width="700px" height="600px">
+            </a>
+            </div>
+
+            <aside>
+              <div class="slider">
+                <div class="sale">
+                  <p> DECEMBER SALES PROMO!!!</p>
+                </div>
+
+                  <div class="slide-fade">
+                      <p>Hoo-ho-hoo! It's that time of the year again.
+                        No one deserve a healthy drinking this season than you do</p>
+                        <div>
+                          
+                          <img src="images/promlady.jpg" name="" id="slide fade" width="400px" height="300px">
+                          <img src="images/promo3.jpg" name="" id="slide fade" width="400px" height="300px">
+
+                          <p>Buy 2 and get one free and other prices.<br>
+                            >Get a chance to win our raffle draws!<br>
+                            >Prices like free can delivery worth of 3 months.<br>
+                            >Offer valid from Dec 2 - Dec 24.</p><br><br>
+                          
+                          <p class="Terms"><span>*Terms and conditions apply.</span></p>
+                 </div>
+              </div>
+            </aside>
         </section>
+
+        
 
         <div class="deals">
             <table>
@@ -109,20 +145,40 @@
         </div>
     </main>
 
-    <footer class="container3">
-        <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
-        <div class="lang">
-            <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
-                Deutsch   中国人   Italiano   हिन्दी
-            </p>
-        </div>
-
-        <div class="fund" >
-            Fundraiser   
-            Services   Information Centre  
-            Privacy Policy   Privacy Centre    Cookies   
-            Terms Help
-        </div>
-    </footer>
+    <footer class="footer">
+      <div class="footer-column">
+          <h3>FIND A STORE</h3>
+          <div class="search-box">
+              <input type="text" id="search-box" placeholder="City or Zip code">
+              <button id="search-button">🔍</button>
+          </div>
+          <h3>FOLLOW US</h3>
+          <div class="social-icons">
+              
+              <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+              <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+              <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+          </div>
+      </div>
+      <div class="footer-column">
+          <h3>CUSTOMER SERVICE</h3>
+          <ul>
+              <li><a href="Contact.html">Contact Us</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Gift Card</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>ABOUT </h3>
+          <ul>
+              <li><a href="#">Waterman Company</a></li>
+              <li><a href="#">Corporate Info</a></li>
+              <li><a href="#">Careers</a></li>
+          </ul>
+      </div>
+  </footer>
 </body>
 </html>
