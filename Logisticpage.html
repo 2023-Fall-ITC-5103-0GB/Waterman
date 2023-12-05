@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Page</title>
+    <link rel ="StyleSheet" href="./css/main.css"/>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Logistics Status</h1>
+       
+
+        <nav class="main-nav "> 
+            <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
+                <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;  " class="drop">HOME</a>
+                    <div class="drop-content">
+                        <a href="profile.html">profile</a> 
+                        <a href="sign-up.html">Sign-up</a> 
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;  "class="drop">ABOUT US</a>
+                    <div class="drop-content">
+                        <a href="">Service Request</a>
+                        <a href="">Tracking order</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%; " class="drop">CONTACT US</a>
+                    <div class="drop-content">
+                        <a href="Logisticpage.html">Logistics</a>
+                        <a href="bookademo.html">Book A Demo</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%; " class="drop">CARRIERS</a>
+                    <div class="drop-content">
+                        <a href="Dealers.html">Dealers</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%; color: whitesmoke;" class="drop">STAYING HEALTHY</a>
+                    <div class="drop-content">
+                        <a href="">Our Packages</a>
+                        <a href="sourceofwater.html">Source Of Water</a>
+                    </div>
+                </li>
+                </ul>
+                </nav>
+    </header>
+
+    <section id="deliveryDashboardSection">
+        <h2>Delivery Dashboard</h2>
+       
+        
+        <p id="deliveryStatus">Delivery status: In progress</p>
+
+        <script>
+            const deliveryStatusElement = document.getElementById('deliveryStatus');
+
+            function updateDeliveryStatus(status) {
+                deliveryStatusElement.textContent = `Delivery status: ${status}`;
+            }
+
+            setInterval(() => {
+                const randomStatus = Math.random() > 0.5 ? 'In progress' : 'Completed';
+                updateDeliveryStatus(randomStatus);
+            }, 10000); // Update every 10 seconds
+        </script>
+    </section>
+
+    <section id="realTimeTrackingSection">
+        <h2>Real-time Tracking</h2>
+        <div id="map"></div>
+        <script>
+            // real-time tracking for a customer
+            function simulateRealTimeTracking() {
+                alert('Updating real-time tracking...');
+            }
+
+            // changes in real-time tracking over time
+            setInterval(simulateRealTimeTracking, 5000); // Update every 5 seconds
+        </script>
+    </section>
+
+    <section id="orderManagementSection">
+        <h2>Order Management</h2>
+        <ul id="pendingOrdersList">
+        
+            <script>
+                const pendingOrdersList = document.getElementById('pendingOrdersList');
+                const pendingOrdersData = [
+                    { id: 1, product: 'Product A', quantity: 5 },
+                    { id: 2, product: 'Product B', quantity: 3 },
+                    { id: 3, product: 'Product C', quantity: 2 }
+                ];
+
+                pendingOrdersData.forEach(order => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${order.product} - Quantity: ${order.quantity}`;
+                    pendingOrdersList.appendChild(listItem);
+                });
+            </script>
+        </ul>
+    </section>
+
+    <section id="routeOptimizationSection">
+        <h2>Route Optimization</h2>
+        <button onclick="optimizeRoutes()">Optimize Routes</button>
+        <script>
+            function optimizeRoutes() {
+                alert('Routes optimized!');
+            }
+        </script>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>FIND A STORE</h3>
+            <div class="search-box">
+                <input type="text" id="search-box" placeholder="City or Zip code">
+                <button id="search-button">🔍</button>
+            </div>
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                
+                <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+                <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Gift Card</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>ABOUT </h3>
+            <ul>
+                <li><a href="#">Waterman Company</a></li>
+                <li><a href="#">Corporate Info</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
