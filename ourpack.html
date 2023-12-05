@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drinking water delivery app service which helps you for
+        online water supplier  to order instant water can, water delivery, drinking water home delivery,
+        mineral water can home delivery,  bottle water delivery, visleri water bottle, aquafina water bottle,
+        kinley water bottle, water supplier near me, bulk orders, party conference orders and customized 
+        bottles to water supplier near me.">
+    <link rel="shortcut icon" href="./images/water.jpg" />
+    <link rel ="StyleSheet" href="./css/main.css"/>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <a href="home.html">
+                <img class="logo" src="./images/Wat.jpg" alt="Home water delivery" height="90px">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li class="drop-down menu" id="home-menu">
+                        <a href="home.html" class="drop">HOME</a>
+                        <div class="drop-content">
+                            <a href="profile.html">profile</a> 
+                            <a href="sign-up.html">Sign-up</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="about-menu">
+                        <a href="aboutus.html" class="drop">ABOUT US</a>
+                        <div class="drop-content">
+                            <a href="">Service Request</a>
+                            <a href="">Tracking order</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="contact-menu">
+                        <a href="Contact.html" class="drop">CONTACT US</a>
+                        <div class="drop-content">
+                            <a href="">Logistics</a>
+                            <a href="bookademo.html">Book A Demo</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="carriers-menu">
+                        <a href="carriers.html" class="drop">CARRIERS</a>
+                        <div class="drop-content">
+                            <a href="Dealers.html">Dealers</a>
+                            <a href="feedback.html">Feedback</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="healthy-menu">
+                        <a href="sources.html" class="drop">STAYING HEALTHY</a>
+                        <div class="drop-content">
+                            <a href="ourpack.html">Our Packages</a>
+                            <a href="sourceofwater.html">Source Of Water</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <div id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+        <!-- Package Selection -->
+        <div class="package-container">
+            <div class="package" id="gold-package">
+                <h3>Gold Package</h3>
+                <ul>
+                    <li>Free Delivery</li>
+                    <li>24/7 Customer Support</li>
+                    <li>Exclusive Deals</li>
+                </ul>
+                <button class="btnu btn-primary" onclick="selectPackage('gold-package')">Select Gold</button>
+            </div>
+
+            <div class="package" id="silver-package">
+                <h3>Silver Package</h3>
+                <ul>
+                    <li>Discounted Delivery</li>
+                    <li>Customer Support</li>
+                </ul>
+                <button class="btnu btn-primary" onclick="selectPackage('silver-package')">Select Silver</button>
+            </div>
+
+            <div class="package" id="diamond-package">
+                <h3>Diamond Package</h3>
+                <ul>
+                    <li>Express Delivery</li>
+                    <li>Personalized Support</li>
+                    <li>Early Access to New Products</li>
+                </ul>
+                <button class="btnu btn-primary" onclick="selectPackage('diamond-package')">Select Diamond</button>
+            </div>
+        </div>
+        
+<!--  -->
+        <footer class="footer">
+            <div class="footer-column">
+                <h3>FIND A STORE</h3>
+                <div class="search-box">
+                    <input type="text" id="search-box" placeholder="City or Zip code">
+                    <button id="search-button">🔍</button>
+                </div>
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    
+                    <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>ABOUT </h3>
+                <ul>
+                    <li><a href="#">Waterman Company</a></li>
+                    <li><a href="#">Corporate Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    <script>
+        // Your existing dropdown toggle function
+        function toggleDropdown(menu) {
+            const dropContent = menu.querySelector('.drop-content');
+    
+            menu.addEventListener('mouseenter', function () {
+                dropContent.style.display = 'block';
+            });
+    
+            menu.addEventListener('mouseleave', function () {
+                dropContent.style.display = 'none';
+            });
+        }
+    
+        // Function to handle package selection
+        function selectPackage(packageId) {
+            const packages = document.querySelectorAll('.package');
+            packages.forEach(packageElement => {
+                packageElement.classList.remove('selected');
+            });
+    
+            const selectedPackage = document.getElementById(packageId);
+            selectedPackage.classList.add('selected');
+    
+            // Redirect to the corresponding HTML page based on the selected package
+            let destinationPage;
+            switch (packageId) {
+                case 'gold-package':
+                    destinationPage = 'gold.html';
+                    break;
+                case 'silver-package':
+                    destinationPage = 'silver.html';
+                    break;
+                case 'diamond-package':
+                    destinationPage = 'diamond.html';
+                    break;
+                default:
+                    // Default to a fallback page if needed
+                    destinationPage = 'fallback.html';
+            }
+    
+            // Perform the redirection
+            window.location.href = destinationPage;
+        }
+    
+        // Function to show loading overlay
+        function showLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+        }
+    
+        // Function to hide loading overlay
+        function hideLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'none';
+        }
+    
+        // Toggle dropdown for each menu item
+        const homeMenu = document.getElementById('home-menu');
+        const aboutMenu = document.getElementById('about-menu');
+        const contactMenu = document.getElementById('contact-menu');
+        const carriersMenu = document.getElementById('carriers-menu');
+        const healthyMenu = document.getElementById('healthy-menu');
+    
+        toggleDropdown(homeMenu);
+        toggleDropdown(aboutMenu);
+        toggleDropdown(contactMenu);
+        toggleDropdown(carriersMenu);
+        toggleDropdown(healthyMenu);
+    
+        // Add event listeners to show loading overlay when a menu item is clicked
+        homeMenu.addEventListener('click', showLoadingOverlay);
+        aboutMenu.addEventListener('click', showLoadingOverlay);
+        contactMenu.addEventListener('click', showLoadingOverlay);
+        carriersMenu.addEventListener('click', showLoadingOverlay);
+        healthyMenu.addEventListener('click', showLoadingOverlay);
+    
+        // Add event listener to hide loading overlay when the page is fully loaded
+        window.addEventListener('load', hideLoadingOverlay);
+    </script>
+</body>
+
+</html>
