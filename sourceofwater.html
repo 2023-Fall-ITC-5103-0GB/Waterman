@@ -1,161 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources of Drinking Water</title>
-   
-    <style>
-       
-        @media screen and (max-width: 768px) {
-            .sourcesw {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
-    <link rel ="StyleSheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <link rel="stylesheet" href="./css/sourceOfwater.css">
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
- 
+
 <body class="bodysw">
- 
-    <main >
-           
 
+    <main>
         <div class="header">
-            <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
-                data-rjs="2" alt="Home water delivery" height="90px">
-              
-            </a><!--Linked the logo to home page-->
-            
-            <div class="header2">
-                <form id="search" method="get" action="Dealers.html">
-                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
-                    <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
-                    <input type="button" value="Search" onClick="" />
-                </form>
-            </div>
-        </div>    
-    
-        <nav class="main-nav "> <!--float-right d-none d-lg-block-->
-            <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
-                <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
-                    <div class="drop-content">
-                        <a href="profile.html">profile</a> <!--Input your page link in href and replace name -->
-                        <a href="sign-up.html">Sign-up</a> <!--Input your page link in href and replace name-->
-                    </div>
-                </li>
-                <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;" class="drop">ABOUT US</a>
-                    <div class="drop-content">
-                        <a href="">Service Request</a>
-                        <a href="">Tracking order</a>
-                    </div>
-                </li>
-                <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%;" class="drop">CONTACT US</a>
-                    <div class="drop-content">
-                        <a href="">Email</a>
-                        <a href="">Location</a>
-                    </div>
-                </li>
-                <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%;" class="drop">CARRIERS</a>
-                    <div class="drop-content">
-                        <a href="Dealers.html">Dealers</a>
-                        <a href="feedback.html">Feedback</a>
-                    </div>
-                </li>
-                <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%;" class="drop">STAYING HEALTHY</a>
-                    <div class="drop-content">
-                        <a href="">Our Packages</a>
-                        <a href="sourceofwater.html">Source Of Water</a>
-                    </div>
-                </li>
-                <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
-            </ul>
-        </nav>
+            <a href="home.html">
+                <img class="logo" src="./images/Wat.jpg" alt="Home water delivery" height="90px">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li class="drop-down menu" id="home-menu">
+                        <a href="home.html" class="drop">HOME</a>
+                        <div class="drop-content">
+                            <a href="profile.html">profile</a> 
+                            <a href="sign-up.html">Sign-up</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="about-menu">
+                        <a href="aboutus.html" class="drop">ABOUT US</a>
+                        <div class="drop-content">
+                            <a href="">Service Request</a>
+                            <a href="">Tracking order</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="contact-menu">
+                        <a href="Contact.html" class="drop">CONTACT US</a>
+                        <div class="drop-content">
+                            <a href="">Logistics</a>
+                            <a href="bookademo.html">Book A Demo</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="carriers-menu">
+                        <a href="carriers.html" class="drop">CARRIERS</a>
+                        <div class="drop-content">
+                            <a href="Dealers.html">Dealers</a>
+                            <a href="feedback.html">Feedback</a>
+                        </div>
+                    </li>
+                    <li class="drop-down menu" id="healthy-menu">
+                        <a href="sources.html" class="drop">STAYING HEALTHY</a>
+                        <div class="drop-content">
+                            <a href="ourpack.html">Our Packages</a>
+                            <a href="sourceofwater.html">Source Of Water</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </main>
-
-    <div class="containersw">
-        <div class="sourcesw">
-            <img src="./images/springwater.jpg" alt="Spring Water">
-            <div class="source-contentsw">
-                <h2>Spring Water</h2>
-                <p>This water comes from natural springs and is filtered for purity.</p>
-            </div>
-        </div>
- 
-        <div class="sourcesw">
-            <img src="./images/wellwater.jpg" alt="Well Water">
-            <div class="source-contentsw">
-                <h2>Well Water</h2>
-                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
-            </div>
-        </div>
-
-
-
-        <!-- Work on this video too. -->
-        
- 
- 
-    
+    <div id="loadingOverlay"> 
+        <div class="loading-spinner"></div>
     </div>
- 
-    <footer class="container3">
-        <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
-        <div class="lang">
-            <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
-                Deutsch   中国人   Italiano   हिन्दी
-            </p>
-        </div>
 
-        <div class="sourcesw">
-            <img src="./images/dams.jpeg" alt="dams">
-            <div class="source-contentsw">
-                <h2>Dams</h2>
-                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
+    <div style="margin-left: 10ex; margin-top: 5ex;"> 
+        <div class="slick-slider">
+            <div class="slick-slide sourcesw">
+                <img src="./images/springwater.jpg" alt="Spring Water" style="width: 100%;">
+                <div class="source-contentsw">
+                    <h2>Spring Water</h2>
+                    <p>This water comes from natural springs and is filtered for purity.</p>
+                    <p>One of the healthiest and most refreshing water you can drink</p>
+                    <p>It is generally safe to drink spring water every day, especially if it comes from a reputable and
+                        well-regulated source</p>
+                    <p>Spring water is considered the best drinking water to drink</p>
+                    <p>Spring water is naturally filtered from the earth</p>
+                    <p>Spring water is unique in that it is naturally filtered and contains essential minerals</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="slick-slide sourcesw">
+                <img src="./images/wellwater.jpg" alt="Well Water" style="width: 100%;">
+                <div class="source-contentsw">
+                    <h2>Well Water</h2>
+                    <p>Extracted from deep within the earth, well water is rich in minerals.</p>
+                    <p>Approximately 25% of global rainwater becomes groundwater, which supplies wells</p>
+                    <p>If there is proper research and preparation, most wells never run dry. Medium to deep wells last two
+                        to three decades, at minimum</p>
+                    <p>The deeper the well the less likely it is that contamination will occur</p>
+                    <p>Well water is the best thing to drink for your body</p>
+                </div>
+            </div>
+
+            <div class="slick-slide sourcesw">
+                <img src="./images/dams.jpeg" alt="Dams" style="width: 100%;">
+                <div class="source-contentsw">
+                    <h2>Dams</h2>
+                    <p>Extracted from deep within the earth, well water is rich in minerals.</p>
+                    <p>Damn is a well-like structure that is built across a creek or river, to block the flow of water
+                        through the landscape</p>
+                    <p>When it rains, water builds up behind the dam, creating an artificial lake or reservoir</p>
+                    <p>After water treatment, it can be used for drinking. This can help ensure that people are drinking
+                        pure water, preventing diseases like cholera.</p>
+                </div>
+            </div>
+
+            <div class="slick-slide sourcesw">
+                <img src="./images/stream-water.jpeg" alt="Streams" style="width: 100%;">
+                <div class="source-contentsw">
+                    <h2>Streams</h2>
+                    <p>A spring is the result of an aquifer being filled to the point that the water overflows onto the
+                        land surface</p>
+                    <p>Spring water can be developed into drinking water supply by collecting the discharged water using
+                        the tile or pipe and running the water into some type of sanitary storage tank</p>
+                    <p>Spring water provides much-needed oxygen to the body and the brain</p>
+                    <p>Spring water aids in good digestion, helps maintain a healthy weight, and tastes great</p>
+                    <p>Spring water never tastes flat or boiled</p>
+                    <p>It makes an excellent drinking experience and one that does wonders for the body</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="slick-slide sourcesw">
+                <img src="./images/rainwater.png" alt="Rains" style="width: 100%;">
+                <div class="source-contentsw">
+                    <h2>Rains</h2>
+                    <p>Rainwater is one of the purest sources of water available.</p>
+                    <p>Its quality almost always exceeds that of ground or surface water because it does not come in
+                        contact with soil or rocks where it can dissolve minerals and salts.</p>
+                    <p>Most rain is perfectly safe to drink and may be even cleaner than the public water supply.</p>
+                    <p>Only rain that has fallen directly from the sky should be collected for drinking.</p>
+                </div>
             </div>
         </div>
-
-
-
-        <div class="sourcesw">
-            <img src="./images/stream-water.jpeg" alt="Streams">
-            <div class="source-contentsw">
-                <h2>Streams</h2>
-                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
-            </div>
-        </div>
-
-
-        <div class="sourcesw">
-            <img src="./images/rainwater.png" alt="Rains">
-            <div class="source-contentsw">
-                <h2>Rains</h2>
-                <p>Extracted from deep within the earth, well water is rich in minerals.</p>
-            </div>
-        </div>
- 
-        <!-- Commenting for now - will try and add more description later -->
- 
- 
-    
     </div>
- 
-    <footer class="container3">
-        <p id="name"><strong>WATERMAN water company, Copyright &copy: 2023</strong></p>
-        <div class="lang">
-            <p>English(UK)   Hausa   Français(France)  Português(Portugal)   Español   العربية  
-                Deutsch   中国人   Italiano   हिन्दी
-            </p>
-        </div>
 
-        <div class="fund" >
-            Fundraiser   
-            Services   Information Centre  
-            Privacy Policy   Privacy Centre    Cookies   
-            Terms Help
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>FIND A STORE</h3>
+            <div class="search-box">
+                <input type="text" id="search-box" placeholder="City or Zip code">
+                <button id="search-button">🔍</button>
+            </div>
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                
+                <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+                <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Gift Card</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>ABOUT </h3>
+            <ul>
+                <li><a href="#">Waterman Company</a></li>
+                <li><a href="#">Corporate Info</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.slick-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+        // Your existing dropdown toggle function
+        function toggleDropdown(menu) {
+            const dropContent = menu.querySelector('.drop-content');
+
+            menu.addEventListener('mouseenter', function () {
+                dropContent.style.display = 'block';
+            });
+
+            menu.addEventListener('mouseleave', function () {
+                dropContent.style.display = 'none';
+            });
+        }
+
+        // Function to handle package selection
+        function selectPackage(packageId) {
+            const packages = document.querySelectorAll('.package');
+            packages.forEach(packageElement => {
+                packageElement.classList.remove('selected');
+            });
+
+            const selectedPackage = document.getElementById(packageId);
+            selectedPackage.classList.add('selected');
+
+            
+        }
+         // Function to show loading overlay
+         function showLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+        }
+
+        // Function to hide loading overlay
+        function hideLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'none';
+        }
+
+        // Toggle dropdown for each menu item
+        const homeMenu = document.getElementById('home-menu');
+        const aboutMenu = document.getElementById('about-menu');
+        const contactMenu = document.getElementById('contact-menu');
+        const carriersMenu = document.getElementById('carriers-menu');
+        const healthyMenu = document.getElementById('healthy-menu');
+
+        toggleDropdown(homeMenu);
+        toggleDropdown(aboutMenu);
+        toggleDropdown(contactMenu);
+        toggleDropdown(carriersMenu);
+        toggleDropdown(healthyMenu);
+
+        // Add event listeners to show loading overlay when a menu item is clicked
+        homeMenu.addEventListener('click', showLoadingOverlay);
+        aboutMenu.addEventListener('click', showLoadingOverlay);
+        contactMenu.addEventListener('click', showLoadingOverlay);
+        carriersMenu.addEventListener('click', showLoadingOverlay);
+        healthyMenu.addEventListener('click', showLoadingOverlay);
+
+        // Add event listener to hide loading overlay when the page is fully loaded
+        window.addEventListener('load', hideLoadingOverlay); 
+       </script>
 </body>
- 
+
 </html>
