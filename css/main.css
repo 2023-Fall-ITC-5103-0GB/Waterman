@@ -75,12 +75,24 @@
     display: inline-block;
     text-align: center;
     padding: 14px auto;
+   
 
 }
+
+
+.main-nav .drop {
+    color: whitesmoke; /* Set your color here */
+  }
+  
+  /* To ensure the color applies to the links on hover as well */
+  .main-nav .drop:hover {
+    color: whitesmoke; /* Set the color for hover state if necessary */
+  }
 
 .drop-down menu {
     display: none;
     position: absolute;
+
 } 
 
  .drop-content {
@@ -93,7 +105,7 @@
 } 
 
 .drop-content a {
-    color: rgb(105, 105, 188);
+    color: rgb(105, 105, 188);  
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -1065,9 +1077,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
           }
           
-<<<<<<< Updated upstream
-  
-=======
+
   /* siddharth's footer changes */
 
 .footer {
@@ -1257,4 +1267,5 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         opacity: 1;
     }
 }
->>>>>>> Stashed changes
+
+

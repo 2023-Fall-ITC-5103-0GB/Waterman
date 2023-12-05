@@ -1,0 +1,170 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    cursor: pointer;
+    /* Add more styling as needed */
+    
+}
+
+h3{
+    background: url(../images/plus.png) no-repeat left center;
+}
+
+h3.minus {
+    background: url(../images/minus.png) no-repeat left center;
+  }
+
+.faq-answer {
+    display: none; /* Hide answers initially */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+.faq-question::after {
+    content: ' \25BC'; /* Downward arrow */
+    float: right; /* Position the arrow to the right */
+    transition: transform 0.3s ease; /* Smooth transition for rotating arrow */
+}
+
+
+.faq-question.active::after {
+    transform: rotate(-180deg); /* Flip the arrow when active */
+}
+
+.hidden {
+    display: none;
+}
+
+.faq-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq h3 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.faq p {
+    margin: 10px 0;
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #367B37;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-container {
+    width: 500px;
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-header .close-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #138496;
+}
+
+
+
+h2 {
+    font-size: 120%;
+    padding: 0.25em 0 0.25em 25px;
+    cursor: pointer;
+    background: url(./images/plus.png) no-repeat left center;
+  }
+  h2.minus {
+    background: url(./images/minus.png) no-repeat left center;
+  }
+/* Add styles for input focus and other states as needed */
+
+mydiv
+{
+    display: none;
+}
+
+mydiv.open {
+    display: block;
+  }
+
