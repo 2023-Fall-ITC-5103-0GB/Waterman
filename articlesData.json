@@ -1,0 +1,23 @@
+[
+    {
+        "imageUrl": "images/article-1.jpg",
+        "title": "EDUCATION ABOUT SUSTAINABILITY IS CRUCIAL FOR CREATING A GREENER FUTURE FOR THE NEXT GEN",
+        "text": "Educating the future generation about building a plastic circular economy.",
+        "readMoreLink": "#"
+    },
+
+    {
+        "imageUrl": "images/article-2.jpg",
+        "title": "pH in Natural Mineral Water - Understanding Basics to Identify the Best Drinking Water",
+        "text": "Find out the impact of lead in your drinking water, and how to eliminate it.",
+        "readMoreLink": "#"
+    },
+
+    {
+        "imageUrl": "images/article-3.jpg",
+        "title": "5 Reasons Why Your Skin Needs to Stay Hydrated",
+        "text": "Drinking mineral water that is going to prove very beneficial for your skin in the long run.",
+        "readMoreLink": "#"
+    }
+    
+]
