@@ -1066,12 +1066,13 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           }
           
           .subscription-content img, .subscription-image img {
+            margin-top:12ex;
             max-width: 100%; /* Ensure it's responsive */
             height: auto; /* This will maintain the aspect ratio of the image */
           }
           
           /* It's important to add media queries to make sure the layout is responsive */
-          @media (max-width: 768px) {
+          @media (max-width: 600px) {
             .subscription-section {
               flex-direction: column;
             }
@@ -1309,4 +1310,12 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     left: 0;
     top: 50%; /* Adjust this value as needed */
+}
+
+
+@media (max-width: 600px) {
+    #movingImage {
+        width: 80%; /* Smaller width on smaller screens */
+        top: 40vh; /* Adjust position for smaller screens */
+    }
 }

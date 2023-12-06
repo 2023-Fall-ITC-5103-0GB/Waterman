@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="signup.css">
+  
+</head>
+<body>
+   
+    <div class="header">
+         <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+            data-rjs="2" alt="Home water delivery" height="90px"> 
+          
+        </a>
+        
+    </div>    
+       
+
+  <div id="signup-container">
+    <h2>Sign Up</h2>
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="signupBtn">Sign Up</button>
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <!-- Popup for messages -->
+  <div id="popup" class="popup" style="display: none;">
+    <div id="popupMessage"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
