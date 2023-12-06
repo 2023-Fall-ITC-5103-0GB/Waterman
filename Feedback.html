@@ -9,7 +9,9 @@
     <link rel="shortcut icon" href="./images/water.jpg" />
         <link rel ="StyleSheet" href="./css/main.css"/>
         <link rel="stylesheet" href="css/Rafiat.css">
-    
+        <script src="./RafiatJavaScript/Feedback.js"></script>
+        <script src="https://kit.fontawesome.com/63cf91fe22.js"
+         crossorigin="anonymous"></script>
 </head>
 
 <body class="">
@@ -81,18 +83,26 @@
                 <!-- <fieldset> -->
                     <div class="input-group">
                         <label for="name">Full Name:</label>
-                        <input type="text" id="text" placeholder="First and Last name"><br><br>
+                        <input type="text" id="name" placeholder="First and Last name"><br><br>
+                        <span id="nameError" style="color: red;"></span>
+
 
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" placeholder="Email address"><br><br>
+                        <span id="emailError" style="color: red;"></span>
+
 
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Mobile Number"><br><br>
+                        <span id="phoneError" style="color: red;"></span>
+
 
                         <textarea name="comments" placeholder="Your feeback message here..." rows="10"></textarea>
+                        <span id="textError" style="color: red;"></span>
+
                     </div>
         
-                    <button class="btn1">Submit Feedback</button>    
+                    <input type="button" id="btn1" value="Submit Feedback" onclick="submitForm()">    
                 <!-- </fieldset> -->
                 
             </form>
