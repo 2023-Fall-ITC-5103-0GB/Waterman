@@ -1,152 +1,140 @@
 <!DOCTYPE html>
-   <head>
-    
-   <!-- Document Title -->
-   <title>Drinking Water Delivery App Service | Online Water Delivery Service | Mineral Water Can Home Delivery |
-     Water  Supplier near me | Bottle Water Delivery | Waterman – Your Water Friend</title>
-
-   <meta property="description" content="Drinking water delivery app service which helps you for
-    online water supplier  to order instant water can, water delivery, drinking water home delivery,
-    mineral water can home delivery,  bottle water delivery, visleri water bottle, aquafina water bottle,
-     kinley water bottle, water supplier near me, bulk orders, party conference orders and customized 
-      bottles to water supplier near me.">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Demo</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel ="StyleSheet" href="./css/main.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src ="profile.js"></script>
+</head>
+<body style="background-image: url('./images/demo.jpg');">
    
-    <link rel="shortcut icon" href="./images/water.jpg" />
-    <link rel ="StyleSheet" href="./css/main.css"/>
-   
-    </title>
+    <div class="header">
+         <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
+            data-rjs="2" alt="Home water delivery" height="90px"></a>
+    </div>    
 
+    <main >
+        <div class="header">
+            <a href="home.html"><img class="logo" src="./images/Wat-removebg-preview.png" 
+                data-rjs="2" alt="Home water delivery" height="90px">
+              
+            </a><!--Linked the logo to home page-->
+            
+            <div class="header2">
+                <form id="search" method="get" action="Dealers.html">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
+                    <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
+                    <input type="button" value="Search" onClick="" />
+                </form>
+            </div>
+        </div>    
     
-    <style>
-        bodyf {
-            font-family: Arial, sans-serif;
-            background-color: #f3f4f6; /* Light grayish color for better contrast */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* .header {
-        background-color: #1bb1dc;
-        width: 100%;
-        padding: 10px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center; 
-        } */
-
-        .header-logo {
-        margin-right: 10px; /* This gives a little space after the logo */
-    }
-
-        .form-container {
-            background-color: #FFFFFF;
-            padding: 20px 40px;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 80px; /* Adjusted margin for the logo header */
-        }
-
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .input-group {
-            margin-bottom: 15px;
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background-color: #007BFF;
-            color: #FFFFFF;
-        }
-
-        .btn-secondary {
-            background-color: #E0E0E0;
-            color: #333;
-            margin-top: 10px;
-        }
-
-        .extra-info {
-            text-align: center;
-            margin-top: 10px;
-        }
-    </style>
-   </head>
-    <body >
-        <main >
-           
-
-            <div class="header">
-                <a href="home.html"><img class="logo" src="./images/Wat.jpg" 
-                    data-rjs="2" alt="Home water delivery" height="90px">
-                  
-                </a><!--Linked the logo to home page-->
+        <nav class="main-nav "> <img src="" alt="" srcset="">
+            <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
+                <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;  " class="drop">HOME</a>
+                    <div class="drop-content">
+                        <a href="profile.html">profile</a> 
+                        <a href="signup.html">Sign-up</a> 
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;  "class="drop">ABOUT US</a>
+                    <div class="drop-content">
+                        <a href="custservice.html">Service Request</a>
+                        <a href="trackingorder.html">Tracking order</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%; " class="drop">CONTACT US</a>
+                    <div class="drop-content">
+                        <a href="test.html">Logistics</a>
+                        <a href="bookademo.html">Book A Demo</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="carriers.html" style="padding-top: 14%; " class="drop">CARRIERS</a>
+                    <div class="drop-content">
+                        <a href="Dealers.html">Dealers</a>
+                        <a href="feedback.html">Feedback</a>
+                    </div>
+                </li>
+                <li class="drop-down menu"><a href="sources.html" style="padding-top: 9%; color: whitesmoke;" class="drop">STAYING HEALTHY</a>
+                    <div class="drop-content">
+                        <a href="ourpack.html">Our Packages</a>
+                        <a href="sourceofwater.html">Source Of Water</a>
+                    </div>
+                </li>
                 
-                <div class="header2">
-                    <form id="search" method="get" action="Dealers.html">
-                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
-                        <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
-                        <input type="button" value="Search" onClick="" />
-                    </form>
-                </div>
-            </div>    
+            </ul>
+        </nav>
+
         
-            
-        </main>
+    </main>
+      <div id="signup-container" >
+        <h2>Book Your Demo</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="signupBtn">Sign Up</button>
+        <button id="loginBtn">Login</button>
+      </div>
+
+      <div>
+        <iframe width="1800" height="515" src="https://www.youtube.com/embed/UNq4ftlu7T8" style="margin-top: 5ex;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Popup for messages -->
+    <div id="popup" class="popup" style="display: none;">
+      <div id="popupMessage"></div>
+    </div>
+
+    <img id="image1" src="./images/demo1.jpg" alt="First Image">
+    <img id="image2" src="./images/demo2.jpg" alt="Second Image">
 
 
-
-        <div class="form-container">
-            <h2>Booking your Demo</h2>
-    
-            <div class="input-group">
-                <input type="text" placeholder="Full Name">
+    <footer class="footer" style="margin-top: 55ex;">
+        <div class="footer-column">
+            <h3>FIND A STORE</h3>
+            <div class="search-box">
+                <input type="text" id="search-box" placeholder="City or Zip code">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass fa-xl" 
+                    style="color: black;"></i>
+                </button>
             </div>
-    
-            <div class="input-group">
-                <input type="email" placeholder="Email Address">
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                
+                <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+                <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
             </div>
-
-            <div class="input-group">
-                <input type="text" placeholder="Phone">
-            </div>
-    
-            <div class="input-group">
-                <input type="password" placeholder="Password">
-            </div>
-    
-            <div class="input-group">
-                <input type="password" placeholder="Confirm Password">
-            </div>
-    
-            <button class="btn btn-primary">Book A Demo</button>
-            
-    
-          
         </div>
-                       
+
+
+
+        <div class="footer-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Gift Card</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>ABOUT </h3>
+            <ul>
+                <li><a href="#">Waterman Company</a></li>
+                <li><a href="#">Corporate Info</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
