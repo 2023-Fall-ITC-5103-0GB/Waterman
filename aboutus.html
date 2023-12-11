@@ -1,102 +1,40 @@
 <html>
 <head>
     <title>About Us</title>
+    <link rel ="StyleSheet" href="./css/sneha.css"/>
     <link rel ="StyleSheet" href="./css/main.css"/>
-    <link rel="shortcut icon" href="./images/water.jpg" />
+   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/63cf91fe22.js"
+     crossorigin="anonymous"></script>
    <script src="aboutus.js"></script>
 <style>
-
-a {
-            text-decoration: none;
-            color: #000; }
-        li1 {
-            background:  rgb(172, 210, 225);
-            width: 200px;height: 140px;
-            margin: 25 15px 15px 0;
-            padding: 5px;
-            border:2px solid none;
-            text-align: center; 
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);}
-        
-		/* FLEXIBLE BOX STYLES */
-		ul1 {
-            display: flex;
-            list-style-type: none;
-            padding: 0; 
-            flex-direction: row; 
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
-        }
-        #gmap{
-            display: flex;
-            list-style-type: none;
-            flex-direction: row; 
-            justify-content: space-around;
-        }
-        .box1{
-            width: 1150px;
-            height: 80px;
-            background-color: white;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            
-        }
-        input[type=text]{
-            width: 300px;
-            height: 40px;
-        }
-        @media screen and (max-width: 600px){
-            .box1{
-            width: 100%;
-            height:auto;
-            }
-            h1,h2{
-                font-size:large;
-            }
-            .general,p,.fund{
-                font-size: small;
-            }
-            #name{
-                font-size: small;
-            }
-            
-            #gmap {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            iframe {
-                width: 100%;
-                height: 300px; 
-            }
-            ul1 li1{
-                width: 50%;
-                height: 120px; 
-            }
-        }
-
-   
+    h2{
+        text-align: center;
+    }
 </style>
-
 </head>
-<body class="">
+<body>
         
-    <div class="header">
-        <a href="home.html"><img class="logo" src="./images/Wat-removebg-preview.png" 
-            data-rjs="2" alt="Home water delivery" height="90px">
-          
-        </a><!--Linked the logo to home page-->
-        
-        <div class="header2">
-            <form id="search" method="get" action="Dealers.html">
-                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
-                <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
-                <input type="button" value="Search" onClick="" />
-            </form>
-        </div>
-    </div>    
+<!-- header and logo     -->
+<div class="header">
+    <div class="logo-container">
+    <a href="home.html">
+        <img class="logo" src="./images/Wat-removebg-preview.png" 
+        data-rjs="2" alt="Home water delivery" height="90px">
+    </a><!--Linked the logo to home page-->
+    </div>
 
+    <div class="header2">
+        <form id="search" method="get" action="aboutus.html">
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: navy;"></i>
+            <input type="search" class="placeholder" placeholder="Search products,dealers and logisitcs" id="search1">
+            <input type="button" value="Search" />
+        </form>
+    </div>
+</div>    
+
+<!-- navigation bar -->
     <nav class="main-nav "> <!--float-right d-none d-lg-block-->
         <ul style="font-family: -apple-system, BlinkMacSystemFont,'Product Sans';">
             <li class="drop-down menu"><a href="home.html" style="padding-top: 20%;" class="drop">HOME</a>
@@ -132,44 +70,86 @@ a {
             <!-- <li><img src="./images/header.png" alt="Play Store Paanilao"></li>                 -->
         </ul>
     </nav>
-           
-    <div id="container1s">
-        <h1><center>ABOUT US</center></h1>
-        <section class="box1"><h2 class="color1s"><i>COMPANY PROFILE</i></h2></section>
-        <main>
-        <p style="text-align: justify;">
-            Water is an essential part of life. Nowadays we are finding ourselves
-             fighting over because of the water quality. Water become a serious topic around us as because
-              we need to sustain our growing population.
 
-The truth is, our cities (and everything in it) depend on water. We all drink it and use it every day. In fact,
- according to the new report by UNICEF and the World Health Organization billions of people around the world are continuing 
- to suffer from poor access to drinking water.In this scenario our WaterMan application will be a hope for people.</p>
-        <p>Our WaterMan application is a drinking water delivery app which helps hundreds
+<!-- main header -->
+    <div id="container1s">
+            <h2 class="color1s">
+                <i>COMPANY PROFILE</i>
+            </h2>
+
+<!-- content -->
+        <main>
+            <section class="box2">
+            <p style="text-align: justify;">
+            Water is an essential part of life. Nowadays we are finding ourselves
+            fighting over because of the water quality. Water become a serious topic around us as because
+            we need to sustain our growing population.The truth is, our cities (and everything in it) depend on water. We all drink it and use it every day. In fact,
+            according to the new report by UNICEF and the World Health Organization billions of people around the world are continuing 
+            to suffer from poor access to drinking water.In this scenario our WaterMan application will be a hope for people.
+            </p>
+            <p>Our WaterMan application is a drinking water delivery app which helps hundreds
              of people for instantly order water cans with simple steps. We supply water cans, water bottles, large containers etc. Users
              can also have the choice to select their preferences and order a customized water bottles. 
-        </p>
-        <section class="box1"><h2 class="color1s"><i>MISSION</i></h2></section>
-        <div class="container3s">
-            <blockquote><i>Our mission is to create a world where no one suffer from lack of 
-                pure drinking water. We will try to establish our app world wide. </i>
-            </blockquote>
+            </p>
+            </section>
 
-        </div>
+            <h2 class="color1s">
+                <i>MISSION</i>
+            </h2>
+
+            <section class="box2">
+                <div class="content">
+            <blockquote><p>Our mission is to revolutionize and simplify the way water reaches 
+                every doorstep across the country. We believe in providing access to clean, safe, and reliable water
+                , making hydration a hassle-free experience for individuals and families.</p>
+                <p>Our goal is to break down geographical barriers, ensuring that no one is left without access to 
+                high-quality water. Leveraging advanced logistics and delivery systems, we strive to reach even
+                 the most remote areas, bringing the essential resource of water to communities far and wide. </p>
+            </blockquote>
+            <div class="mission-content">
+                At the heart of our mission is a dedication to maintaining the highest standards of water quality. 
+                From sourcing to purification and delivery, we implement rigorous processes to guarantee that 
+                you receive water that not only meets but exceeds your expectations.
+                We understand the importance of caring for our planet. Our packaging is crafted from eco-friendly
+                 materials, and we are constantly exploring innovative ways to reduce our environmental impact. 
+                 Our commitment to sustainability aligns with our broader mission to contribute to a healthier world.
+                 We prioritize your convenience. Our user-friendly website and streamlined ordering process 
+                 are designed with you in mind. Our customer support team is always ready to assist, ensuring that 
+                 your experience with Waterman is as smooth as the water we deliver.
+                 More than just a water delivery service, we strive to make a positive impact on the communities 
+                 we serve. Through various initiatives and partnerships, we actively support local causes, fostering
+                  a sense of community and shared responsibility.Join us in our mission to redefine water delivery
+                – not just as a service but as a transformative experience that enhances lives and uplifts communities.
+            
+            </div>
+            </div>
+            </section>
+
+            <h2 class="color1s">
+                <i>LOCATE OUR STORE</i>
+            </h2>
+
+            
         <section class="box1">
-            <h2 class="color1s"><i>LOCATE OUR STORE</i></h2>
-        </section>
-       <p>We have warehouses accross the country.You can search it using our warehouse locator</p>
+       <p>
+        We have warehouses accross the country.You can search it using our warehouse locator
+        </p>
+<!-- 
+this section gives map and search place -->
        <section id="gmap">
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d369348.50952928705!2d-79.88722372962417!3d43.678635018917916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1697858150876!5m2!1sen!2sca" 
              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
        <div id="maplocation">
-        <p>Search for location near you</p>
+        <p>
+            Search for location near you
+        </p>
         <form onsubmit="searchPlace();return false;">
             <input type="text" id="place" name="mapsearch" placeholder="Search...">
-            <button>Search</button>
+            <button>
+                Search
+            </button>
         </form>
         <ul style="margin-top: 20px;">
             <li>Cape Breton Island</li>
@@ -178,82 +158,71 @@ The truth is, our cities (and everything in it) depend on water. We all drink it
             <li>Peggy's Cove</li>
         </ul>
         <div id="result1"></div>
+        <div class="nosearch">
+            <p class="no-results-message">Sorry, no results found for your search.</p>
+          </div>
        </div>
        </section>
+       </section>
 
-        <section class="box1"><h2 class="color1s"><i>WE...</i></h2></section>
-        <div >
-            <ul1>
-                <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
-                    <p><b>Siddarth</b>
-                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>&nbsp
-                    <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
-                        <p><b>Uriel</b>
-                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
-                        &nbsp
-                        <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
-                        <p><b>Mushfiq</b>
-                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
-                        &nbsp
-                        <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture"> 
-                        <p><b>Rafiat</b>
-                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
-                        &nbsp
-                        <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-                    <li1> <img src="" style="width: 80px;height: 80px;margin-left: 30px;border-radius: 50%;" alt="profile picture">
-                         <p><b>Sneha</b>
-                         <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" style="font-size:25px;color:red"></i></a>
-                         &nbsp
-                         <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" style="font-size:25px"></i></a></p></li1>
-
-            </ul1>
-            <p>Click <a href="#" style="color: red;">here</a> for more info..</p>
-                </div>
+<!-- details of group members are provided here -->
+      
+                
+<div class="creators-container">
+    <div class="creator">
+      <img src="./images/face_avatar.jpg" alt="Creator picture">
+      <h3>ABC</h3>
+      <p>Co-Founder & Web Developer</p>
+    </div>
+  
+    <div class="creator">
+      <img src="./images/face_avatar.jpg" alt="Creator picture">
+      <h3>PQR</h3>
+      <p>Co-Founder & Designer</p>
+    </div>
         </div>
+
+
         <button id="scrollTopBtn" onclick="scrolltoTop()">^</button>
         </main>
     </div>
 
-    <div class="container3" style="height:28%;">
-        <footer class="footer">
-            <div class="footer-column">
-                <h3>FIND A STORE</h3>
-                <div class="search-box">
-                    <input type="text" id="search-box" placeholder="City or Zip code">
-                    <button id="search-button"><i class="fa-solid fa-magnifying-glass fa-xl" 
-                        style="color: black;"></i>
-                    </button>
-                </div>
-                <h3>FOLLOW US</h3>
-                <div class="social-icons">
-                    
-                    <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
-                    <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h3>CUSTOMER SERVICE</h3>
-                <ul>
 
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Gift Card</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>ABOUT </h3>
-                <ul>
-                    <li><a href="#">Waterman Company</a></li>
-                    <li><a href="#">Corporate Info</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-        </footer>
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-column">
+        <h3>FIND A STORE</h3>
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="City or Zip code">
+            <button id="search-button">🔍</button>
+        </div>
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+            
+            <a href="#"><img src="./images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="./images/instagram-icon.jpg" alt="Instagram"></a>
+            <a href="#"><img src="./images/pinterest-icon.png" alt="Pinterest"></a>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Gift Card</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>ABOUT </h3>
+        <ul>
+            <li><a href="#">Waterman Company</a></li>
+            <li><a href="#">Corporate Info</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
