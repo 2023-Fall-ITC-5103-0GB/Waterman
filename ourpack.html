@@ -11,9 +11,11 @@
         bottles to water supplier near me.">
     <link rel="shortcut icon" href="./images/water.jpg" />
     <link rel ="StyleSheet" href="./css/main.css"/>
+    <script src="ourpack.js"></script>
+
 </head>
 
-<body>
+<body id="packageu">
     <main>
         <div class="header">
             <a href="home.html">
@@ -67,7 +69,8 @@
 
         <!-- Package Selection -->
         <div class="package-container">
-            <div class="package" id="gold-package">
+          
+         <div class="package" id="gold-package">
                 <h3>Gold Package</h3>
                 <ul>
                     <li>Free Delivery</li>
@@ -82,6 +85,7 @@
                 <ul>
                     <li>Discounted Delivery</li>
                     <li>Customer Support</li>
+                    <li>&nbsp;</li>
                 </ul>
                 <button class="btnu btn-primary" onclick="selectPackage('silver-package')">Select Silver</button>
             </div>
@@ -94,18 +98,16 @@
                     <li>Early Access to New Products</li>
                 </ul>
                 <button class="btnu btn-primary" onclick="selectPackage('diamond-package')">Select Diamond</button>
-            </div>
+            </div> 
         </div>
-        
-<!--  -->
+         
+
         <footer class="footer">
             <div class="footer-column">
                 <h3>FIND A STORE</h3>
                 <div class="search-box">
                     <input type="text" id="search-box" placeholder="City or Zip code">
-                    <button id="search-button"><i class="fa-solid fa-magnifying-glass fa-xl" 
-                        style="color: black;"></i>
-                    </button>
+                    <button id="search-button">🔍</button>
                 </div>
                 <h3>FOLLOW US</h3>
                 <div class="social-icons">
@@ -135,87 +137,6 @@
                 </ul>
             </div>
         </footer>
-
-    <script>
-        // Your existing dropdown toggle function
-        function toggleDropdown(menu) {
-            const dropContent = menu.querySelector('.drop-content');
-    
-            menu.addEventListener('mouseenter', function () {
-                dropContent.style.display = 'block';
-            });
-    
-            menu.addEventListener('mouseleave', function () {
-                dropContent.style.display = 'none';
-            });
-        }
-    
-        // Function to handle package selection
-        function selectPackage(packageId) {
-            const packages = document.querySelectorAll('.package');
-            packages.forEach(packageElement => {
-                packageElement.classList.remove('selected');
-            });
-    
-            const selectedPackage = document.getElementById(packageId);
-            selectedPackage.classList.add('selected');
-    
-            // Redirect to the corresponding HTML page based on the selected package
-            let destinationPage;
-            switch (packageId) {
-                case 'gold-package':
-                    destinationPage = 'gold.html';
-                    break;
-                case 'silver-package':
-                    destinationPage = 'silver.html';
-                    break;
-                case 'diamond-package':
-                    destinationPage = 'diamond.html';
-                    break;
-                default:
-                    // Default to a fallback page if needed
-                    destinationPage = 'fallback.html';
-            }
-    
-            // Perform the redirection
-            window.location.href = destinationPage;
-        }
-    
-        // Function to show loading overlay
-        function showLoadingOverlay() {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            loadingOverlay.style.display = 'flex';
-        }
-    
-        // Function to hide loading overlay
-        function hideLoadingOverlay() {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            loadingOverlay.style.display = 'none';
-        }
-    
-        // Toggle dropdown for each menu item
-        const homeMenu = document.getElementById('home-menu');
-        const aboutMenu = document.getElementById('about-menu');
-        const contactMenu = document.getElementById('contact-menu');
-        const carriersMenu = document.getElementById('carriers-menu');
-        const healthyMenu = document.getElementById('healthy-menu');
-    
-        toggleDropdown(homeMenu);
-        toggleDropdown(aboutMenu);
-        toggleDropdown(contactMenu);
-        toggleDropdown(carriersMenu);
-        toggleDropdown(healthyMenu);
-    
-        // Add event listeners to show loading overlay when a menu item is clicked
-        homeMenu.addEventListener('click', showLoadingOverlay);
-        aboutMenu.addEventListener('click', showLoadingOverlay);
-        contactMenu.addEventListener('click', showLoadingOverlay);
-        carriersMenu.addEventListener('click', showLoadingOverlay);
-        healthyMenu.addEventListener('click', showLoadingOverlay);
-    
-        // Add event listener to hide loading overlay when the page is fully loaded
-        window.addEventListener('load', hideLoadingOverlay);
-    </script>
 </body>
 
 </html>

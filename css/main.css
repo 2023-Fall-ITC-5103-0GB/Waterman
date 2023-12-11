@@ -1158,6 +1158,18 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
 
+.btnu:hover {
+    background-color: #02509e;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+
+#packageu{
+    background: url(../images/botu4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .package {
     background-color: #FFFFFF;
@@ -1168,6 +1180,11 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     text-align: center;
+}
+
+.package:hover {
+    box-shadow: 0px 4px 30px rgb(0, 0, 0);
+    transition: 0.7s;
 }
 
 .package h3 {
