@@ -1,9 +1,9 @@
 
 let myImgArray = [
-    'images/dealer.png',
-    'images/dealer3.jpg',
-    'images/dealer4.jpg',
-    'images/dealer5.jpg',
+    './images/dealer.png',
+    './images/dealer3.jpg',
+    './images/dealer4.jpg',
+    './images/dealer5.jpg',
   ];
   
   // Section 2 -------------------------------------------------
@@ -35,14 +35,14 @@ let myImgArray = [
     document.getElementById('deliver').src = myImgArray[ImgNumber];
   } //end function
   
-let slideInterval = setInterval(nextSlide, 5000);
+let slideInterval = setInterval(ChangeImages(1), 5000);
 
-function pause() {
-    clearInterval(slideInterval);
-}
+// function pause() {
+//     clearInterval(slideInterval);
+// }
 
-function resume() {
-    slideInterval = setInterval(nextSlide, 5000);
-  }
+// function resume() {
+//     slideInterval = setInterval(ChangeImages(1), 5000);
+//   }
 
   
