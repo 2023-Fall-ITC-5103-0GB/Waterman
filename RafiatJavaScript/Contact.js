@@ -14,7 +14,9 @@
 // }
 
 function validateSubscription() {
+    // alert('hello');
 var email = document.getElementById('email1').value;
+// alert(email);
 if (!isValidEmail(email)) {
     document.getElementById('emailError').textContent = 'This field is required.';
 } else {
