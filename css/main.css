@@ -1,3 +1,4 @@
+
 #search1::placeholder {
     color: navy;
     font-size: large;
@@ -282,7 +283,7 @@
 }
 
 /*////////SNEHA///////////*/
-#container1s{
+/* #container1s{
     margin: 40px;
     padding-top: 50px;
 }
@@ -343,9 +344,7 @@
   padding: 10px;
   font-size: 110%;
   border: 1px solid rgb(255, 245, 238);
-}
-
-
+} */
 .header {
     display: flex;
     justify-content: space-between;
@@ -354,10 +353,10 @@
     padding: 10px;
     
 }
-.headertext{
+/* .headertext{
     position: relative;top:400px;left:300px;color: navy;
 
-}
+} */
 
 #scrollTopBtn {
     /* display: none; */
