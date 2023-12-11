@@ -1231,10 +1231,20 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 .main-contentu {
+    background-image: url(../images/hydro.jpg);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    padding: 50px;
+    
+    
+    
+    color: #fff;
+    
     opacity: 0; /* Initially set opacity to 0 for the fade-in effect */
     animation: fadeIn 1s forwards; /* Animation to fade in the content */
 }
