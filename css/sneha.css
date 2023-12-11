@@ -1,24 +1,10 @@
 
 /* 
   css for  about us page starts here */
-
-.box {
-  background-color:#f0eee4 ;
-  color: black;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 110%;
-  border: 1px solid rgb(255, 245, 238);
+body{
+    line-height: 1.5;
+    font-size:large;
 }
-
-.header,
-.footer {
-  background-color: #999;
-}
-.headertext{
-    position: relative;top:400px;left:300px;color: black;
-}
-
 #container1s{
     margin: 40px;
     padding-top: 50px;
@@ -29,26 +15,16 @@
     border: 1px solid #d8d8d8;
 }
 
-
-
 .color1s{
-    color:#0a98c0;
-    padding: 20px;
+    color: navy;;
+    /* padding: 20px; */
 }
+h1{
+  margin-left: 480px;
+  font-size:xx-large;
+} 
 
-/* styling scroll button */
-#scrollTopButton {
-    /* display: none; */
-    position: fixed;
-    bottom: 230px;
-    right: 20px;
-    background-color:grey;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
+
 a {
     text-decoration: none;
     color: #000; }
@@ -80,26 +56,101 @@ ul1 {
 }
 .box1{
     width: 1150px;
-    height: 80px;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    
+    height: 600px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+      border: 1px solid  navy;;
+      border-radius: 8px;
+}
+.box2{
+    width: 1150px;
+    height: 300px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+      border: 1px solid  navy;;
+      border-radius: 8px;
+}
+.box2 p,.box1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px; 
 }
 input[type=text]{
     width: 300px;
     height: 40px;
 }
+.mission-content {
+    display: none;
+    position: absolute;
+    top: 180%;
+    left: 50%;width:600px;height:500px;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 15px;
+    background-color: navy;
+    border: 1px groove white;
+    border-radius: 12px;
+    color:white;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+  .content:hover .mission-content {
+    display: block;
+  }
+  .content:hover h2,
+  .content:hover p {
+    display: none;
+  }
+  .creators-container {
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
 
+  .creator {
+    margin-bottom: 20px;
+  }
 
+  .creator img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .creator p {
+    margin: 0;
+    color: #666;
+  }
+  .nosearch {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-results-message {
+    color: #888;
+    font-size: 18px;
+  }
 
 @media screen and (max-width: 600px){
     .box1{
     width: 100%;
     height:auto;
     }
+    .box2{
+      width: 100%;
+      height:auto;
+      }
     /*changed font sizes*/
     h1,h2{
-        font-size:large; 
+        font-size:small; 
     }
     .general,p,.fund{
         font-size: small;
@@ -125,6 +176,7 @@ input[type=text]{
         right: 10px;
     }
 }
+
 /* 
 css and media queries for about us page ends here */
 
@@ -132,29 +184,31 @@ css and media queries for about us page ends here */
 
 
 
-
-
+/* CUSTOMER SERVICE PAGE */
+/* css and media queries for customer service page */
 .sidebar1s { 
     grid-area: sidebar;
-    height: 1050px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 1200px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    
   }
 .content1s {
     grid-area: content;
-    height: 700px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 850px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .header1s {
+  /* .header1s {
     grid-area:header;
-    height: 300px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
+    height: 330px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  } */
 
   .footer1s {
     grid-area: footer;
-    height: 300px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   }
 
         
@@ -163,9 +217,171 @@ css and media queries for about us page ends here */
     grid-gap: 30px;
     grid-template-columns: 350px 400px 400px;
     grid-template-areas:
-    "sidebar header header"
-    "sidebar content content"
-    "footer  footer  footer";
+    "content content content"
+    "footer footer footer"
+    "sidebar sidebar sidebar";
     background-color: #fff;
     
+  }
+  .box {
+    background-color:white ;
+    color: black;
+    font-size: 110%;
+    /* border: 1px solid rgb(255, 245, 238); */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+      border: 1px solid  navy;
+      border-radius: 8px;
+      margin-left: 40px;
+  }
+  
+  .header,
+  .footer {
+    background-color: #999;
+  }
+  .headertext{
+      position: relative;top:400px;left:300px;color: black;
+  
+  }
+#input1::placeholder {
+font-style: italic;
+font-size: small;
+color: black;
+}
+#input2::placeholder {
+    font-style: italic;
+    font-size: small;
+    color: black;
+    }
+
+ol li{
+margin-top: 10px;
+}
+ol li a{
+text-decoration: none;padding-left: 20px;
+}
+ul2 li {
+list-style: none;
+/* margin-bottom: 10px;padding: 10px; */
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+nav{
+margin-left: 1100px;
+}
+nav a{
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+nav ul{
+list-style: none;
+}
+p,label{
+    font-weight: bold;
+  }
+  .footer1s li{
+    font-weight: bold;font-size: larger;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(172, 210, 225);
+    padding: 10px;
+    
+}
+#reviewbtn{
+  background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 30px;
+}
+#f3{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.drop-down menu a{
+  padding-top: 20%;
+}
+.heading{
+  font-size:240%;
+  color:  navy;;
+}
+#f1{
+  margin-left:370px ;
+}
+
+/****************************************************/
+
+/* ******************************Tracking page******************* */
+
+h1{
+    margin-left: 480px;
+  } 
+    nav{
+margin-left: 1100px;
+    } 
+    nav a{
+text-decoration: none;
+font-weight: bold;
+color: black;
+    }
+    nav ul{
+list-style: none;
+    }
+    #sec1{
+ background-color: #fff;
+border: 1px solid #ccc;
+margin: 0 auto;
+width: 950px;height:1200px;padding: 20px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+padding: 20px;
+  border: 1px solid navy;;
+  border-radius: 8px;
+    }
+  
+.circle {
+width: 80px; 
+height: 80px;
+border-radius: 50%; 
+}
+.flex-circle{
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+}
+#shidetails {
+margin: 0 auto;width: 600px;height:550px;
+background-color: navy;
+border: 1px solid #ccc;position: relative;top: 80px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#shidetails p{
+  color:white;
+}
+
+#shippingdetails{
+text-decoration: none;
+color: #007bff;position: relative;top:50px;
+}
+
+#text{
+padding: 100px;
+font-weight: bold;
+}
+.inp{
+  margin-top: 10px;margin-bottom: 10px;
+  height: 30px;width:320px;
+  }
+  #text{
+    margin-left: 50px;
+  }
+  .out {
+    display: inline;
+    white-space: nowrap;
   }

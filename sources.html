@@ -85,8 +85,8 @@
                 </li>
                 <li class="drop-down menu"><a href="aboutus.html" style="padding-top: 14%;  "class="drop">ABOUT US</a>
                     <div class="drop-content">
-                        <a href="">Service Request</a>
-                        <a href="">Tracking order</a>
+                        <a href="custservice.html">Service Request</a>
+                        <a href="trackingorder.html">Tracking order</a>
                     </div>
                 </li>
                 <li class="drop-down menu"><a href="Contact.html" style="padding-top: 11.5%; " class="drop">CONTACT US</a>
@@ -129,20 +129,25 @@
                     <li>Regulating body temperature through sweat</li>
                     <li>Removing waste products from the body</li>
                 </ul>
-            </div>
-            <div class="content-image">
-                <img src="./images/hydration.jpg" alt="hydration man pouring water into a glass">
-            </div>
-        </div>
 
-        <div class="health-benefits">
-            <h2>Health benefits of drinking water</h2>
-            <h3>Supports metabolism</h3>
-            <p>Research has shown that water intake can increase your metabolism. One small study involving 14 healthy men and women found that drinking just 17 ounces of water increased metabolic rate by an average of 30% for upwards of an hour, peaking at 30 to 40 minutes after drinking. (<a href="https://academic.oup.com/jcem/article/88/12/6015/2661518" target="_blank" rel="noopener noreferrer">7</a>) These metabolic benefits may also play a role in enhancing exercise performance and weight loss.</p>
-            <div class="video-container">
-                <iframe width="350" height="300" src="https://www.youtube.com/embed/2iccTWJ2dmU?si=Ebb0muxaga0Q-J7L"></iframe>
-                <p>Water creates the environment needed for our body to function and work the way that helps us do our best. To maintain it, experts recommend drinking around 2 liters of water every day.</p>
+               
             </div>
+            <!--<div class="content-image">
+                <img src="./images/hydration.jpg" alt="hydration man pouring water into a glass">
+            </div>-->
+        </div> 
+         <div class="health-benefits">
+            <div class="health-benefits-head">
+                <h2>Health benefits of drinking water</h2>
+            </div>
+            <div class="health-benefits-body">
+                <h3>Supports metabolism</h3>
+                <p>Research has shown that water intake can increase your metabolism. One small study involving 14 healthy men and women found that drinking just 17 ounces of water increased metabolic rate by an average of 30% for upwards of an hour, peaking at 30 to 40 minutes after drinking. These metabolic benefits may also play a role in enhancing exercise performance and weight loss.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/2iccTWJ2dmU?si=Ebb0muxaga0Q-J7L"></iframe>
+                    <p>Water creates the environment needed for our body to function and work the way that helps us do our best. To maintain it, experts recommend drinking around 2 liters of water every day.</p>
+                </div>
+            </div> 
         </div>
 
     </main>
@@ -183,62 +188,7 @@
         </div>
     </footer>
 
-    <script>
-        // JavaScript to handle dropdown visibility
-        const homeMenu = document.getElementById('home-menu');
-        const aboutMenu = document.getElementById('about-menu');
-        const contactMenu = document.getElementById('contact-menu');
-        const carriersMenu = document.getElementById('carriers-menu');
-        const healthyMenu = document.getElementById('healthy-menu');
-    
-        // Function to toggle dropdown visibility
-        function toggleDropdown(menu) {
-            const dropContent = menu.querySelector('.drop-content');
-    
-            menu.addEventListener('mouseenter', function () {
-                dropContent.style.display = 'block';
-            });
-    
-            menu.addEventListener('mouseleave', function () {
-                dropContent.style.display = 'none';
-            });
-        }
-    
-        // Toggle dropdown for each menu item
-        toggleDropdown(homeMenu);
-        toggleDropdown(aboutMenu);
-        toggleDropdown(contactMenu);
-        toggleDropdown(carriersMenu);
-        toggleDropdown(healthyMenu);
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-
-            // Function to show loading overlay
-            function showLoadingOverlay() {
-                loadingOverlay.style.display = 'flex';
-            }
-
-            // Function to hide loading overlay
-            function hideLoadingOverlay() {
-                loadingOverlay.style.display = 'none';
-            }
-
-            // Attach click event to the menu items
-            const menuItems = document.querySelectorAll('.menu a');
-            menuItems.forEach(function (menuItem) {
-                menuItem.addEventListener('click', showLoadingOverlay);
-            });
-
-            // Hide loading overlay when the page is fully loaded
-            window.addEventListener('load', hideLoadingOverlay);
-        });
-        // JavaScript for the fade-in animation
-        document.addEventListener('DOMContentLoaded', function () {
-            const mainContent = document.querySelector('.main-content');
-            mainContent.classList.add('fade-in');
-        });
-    </script>
+    <script src="sources.js"></script>
 
 </body>
 
