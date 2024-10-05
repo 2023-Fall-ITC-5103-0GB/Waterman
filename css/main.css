@@ -1,4 +1,8 @@
-
+/* 5th of october, 2024. Rafiat adjusted */
+#flip-container {
+    padding: 50px;
+    color: red;
+}
 #search1::placeholder {
     color: navy;
     font-size: large;
@@ -880,8 +884,14 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     justify-content: center;
     margin-top: 10ex;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-out, transform 2.5s ease-out;
 }
 
+.info-section.pop-out {
+    opacity: 1;
+    transform: scale(1);
+}
 /* Individual card styling */
 .info-card {
     background: #ffffff; /* card background color */

@@ -6,3 +6,10 @@ $(document).ready(function() {
     $('.col-lg-3, .subscription-section').css('display', 'inline-flex');
 });
 
+window.addEventListener('load', function() 
+{
+    const navigation = document.querySelector('.info-section');
+    navigation.classList.add('pop-out');
+});
+
+

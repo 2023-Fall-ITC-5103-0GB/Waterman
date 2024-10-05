@@ -90,29 +90,31 @@
 
             
         </main>
+
+        <!-- <div id="flip-container">
         <div class="subscription-content flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="flip-card-front"> -->
                 <!-- Front content goes here, e.g., an image -->
-                <img src="./images/subscription.png" alt="About Subscription Plan">
+                <!-- <img src="./images/subscription.png" alt="About Subscription Plan">
               </div>
               <div class="flip-card-back">
-                <img src="./images/Subscription-back.png" alt="About Subscription Plan">
+                <img src="./images/Subscription-back.png" alt="About Subscription Plan" height="200px">
               </div>
             </div>
-          </div>
+          </div> -->
           
-          <div class="subscription-image flip-card">
+          
+          <!-- <div class="subscription-image flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="flip-card-front"> -->
                 <!-- Front content goes here, e.g., an image -->
-                <img src="./images/family-drinking-water.png" alt="Family enjoying fresh water">
+                <!-- <img src="./images/family-drinking-water.png" alt="Family enjoying fresh water" height="200px">
               </div>
-              <div class="flip-card-back">
-               
+              
               </div>
             </div>
-          </div>
+          </div> -->
               
         
                      
@@ -120,28 +122,47 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3" style="margin-top: 70px;z-index: 1;">
-                        <div style="height: 200px;">
-                            <div class="panel panel-primary">
-                                <p class="panel-heading" style="line-height: 22px;">
+                        <div style="height: 200px; margin-left:300px ;">
+                            <div class="panel panel-primary" >
+                                <p class="panel-heading" style="line-height: 22px; align-items: center;">
                                     Currently Serving in following areas in Canada                            
                                 </p>
-
-                                <div class="panel-body">
-                                    <marquee style="height: 290px;" direction="up" 
-                                    onmouseover="this.stop();" onmouseout="this.start();">
-                                        <ul style="line-height: 30px;padding-left: 10px;">
-                                            <li>Scarborough</li> 
-                                            <li>Hamilton</li> 
-                                            <li>London</li> 
-                                            <li>Brampton</li> 
-                                            <li>Witby</li> 
-                                            <li>Barrie</li> 
-                                            <li>Vaughn</li> 
-                                            <li>North York</li>                                
-                                        </ul>
-                                    </marquee>
-                                </div>
                             </div>
+                                <div id="panel-container" style="display: grid; grid-template-columns: 50% 50%;">
+                                    <div class="panel-body"style="padding-right: 70px;">
+                                        <marquee style="height: 290px; width: 700px;" direction="right" 
+                                        onmouseover="this.stop();" onmouseout="this.start();">
+                                            <ul style="line-height: 30px; padding-left: 10px;">
+                                                <li>Scarborough</li> 
+                                                <li>Hamilton</li> 
+                                                <li>London</li> 
+                                                <li>Brampton</li> 
+                                                <li>Witby</li> 
+                                                <li>Barrie</li> 
+                                                <li>Vaughn</li> 
+                                                <li>North York</li>                                
+                                            </ul>
+                                        </marquee>
+                                    </div>
+    
+                                    <div class="panel-body" style="margin: left 500px ;">
+                                        <marquee style="height: 290px; width: 700px; padding-left: 70px;" direction="right" 
+                                        onmouseover="this.stop();" onmouseout="this.start();">
+                                            <ul style="line-height: 30px; padding-left: 10px;">
+                                                <li>Scarborough</li> 
+                                                <li>Hamilton</li> 
+                                                <li>London</li> 
+                                                <li>Brampton</li> 
+                                                <li>Witby</li> 
+                                                <li>Barrie</li> 
+                                                <li>Vaughn</li> 
+                                                <li>North York</li>                                
+                                            </ul>
+                                        </marquee>
+                                    </div>
+                                </div>
+                                
+                            
                         </div>
                     </div> 
                  </div>
@@ -160,7 +181,10 @@
            
 
 
-        <img id="movingImage" src="./images/moving-image.png" alt="Spreading the Promise of Goodness" style="position:absolute; left: 0; margin-top: 125ex;">
+        <div>
+            <img id="movingImage" src="./images/moving-image.png" alt="Spreading the Promise of Goodness" 
+            style="position: relative; left: 0; margin-top: 0; height: fit-content;">
+        </div>
 
 
 
